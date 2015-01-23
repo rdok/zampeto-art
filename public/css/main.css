@@ -1,0 +1,64 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 963px;
+    }
+
+    .navbar-brand img {
+        margin-top: -4.9em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 902px;
+    }
+
+    .navbar-brand img {
+        margin-top: -4.9em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 834px;
+    }
+
+    .navbar-brand img {
+        margin-top: -5em;
+    }
+}
+
+/**
+*
+*/
+@media (min-width: 354px) and (max-width: 767px) {
+    .navbar-brand img {
+        margin-top: -5em;
+    }
+}
+
+/**
+* Apple iPhone 3GS, Apple iPhone 4, Apple iPhone 5
+*/
+@media (max-width: 353px) {
+    .navbar-brand img {
+        margin-top: -7.6em;
+    }
+}
+
+body {
+    background-color: #000;
+}
+
+.navbar-static-top {
+    margin-top: 100px;
+}
+
+.navbar.navbar-default.navbar-static-top {
+    background-color: #fefefe;
+    border-top: 1px solid #666;
+}
+
+.navbar.navbar-default.navbar-static-top .container {
+    height: 74px;
+}
