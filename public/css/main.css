@@ -46,8 +46,27 @@
     }
 }
 
+@font-face {
+    font-family: 'cfadet';
+    src: url("../fonts/cf%20adaptive/cfadet_.ttf") ;
+}
+
+@font-face {
+    font-family: 'cfadetb';
+    src: url("../fonts/cf%20adaptive/cfadetb.ttf") ;
+}
+
+@font-face {
+    font-family: 'cfadgeb';
+    src: url("../fonts/cf%20adaptive/cfadgeb.ttf") ;
+}
+
+/**
+* closest font: cfadetb, cfadet
+*/
 body {
     background-color: #000;
+    font-family: cfadetb;
 }
 
 .navbar-static-top {
@@ -61,4 +80,12 @@ body {
 
 .navbar.navbar-default.navbar-static-top .container {
     height: 74px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: transparent;
+}
+
+.navbar-nav li a {
+    line-height: 44px;
 }
