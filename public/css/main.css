@@ -59,7 +59,7 @@ body {
 }
 
 /*ul.nav li.dropdown:hover > ul.dropdown-menu {*/
-    /*display: block;*/
+/*display: block;*/
 /*}*/
 
 .navbar-nav > li > .dropdown-menu {
@@ -245,6 +245,17 @@ hr {
     .dropdown-menu {
         background-color: #bf8010 !important;
     }
+
+    .nav > li {
+        background-color: #000000;
+    }
+
+    .navbar-nav .dropdown .dropdown-menu{
+        display: none !important;
+    }
+    .navbar-nav .dropdown.open .dropdown-menu{
+        display: block !important;
+    }
 }
 
 /**
@@ -269,6 +280,10 @@ hr {
 
     .dropdown-menu {
         background-color: #bf8010;
+    }
+
+    .nav > li {
+        background-color: #000000;
     }
 }
 
