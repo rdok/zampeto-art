@@ -10,7 +10,7 @@ body {
 }
 
 .navbar.navbar-default.navbar-static-top {
-
+    background-color: black;
     font-size: 20px;
 }
 
@@ -242,6 +242,13 @@ hr {
         background-color: #bf8010;
     }
 
+    .nav.navbar-nav {
+        background-color: black;
+    }
+
+    .dropdown-menu {
+        background-color: #bf8010 !important;
+    }
 }
 
 /**
@@ -258,6 +265,14 @@ hr {
 
     #content {
         font-size: 12px;
+    }
+
+    .nav.navbar-nav {
+        background-color: black;
+    }
+
+    .dropdown-menu {
+        background-color: #bf8010;
     }
 }
 
