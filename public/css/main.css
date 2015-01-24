@@ -236,25 +236,37 @@ hr {
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         background-color: #bf8010;
+        padding-left: 0;
+        margin-left: 5px;
+        margin-right: 7px;
     }
 
-    .nav.navbar-nav {
-        background-color: black;
+    #content {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .navbar-nav .dropdown .dropdown-menu {
+        display: none !important;
+    }
+
+    .navbar-nav .dropdown.open .dropdown-menu {
+        display: block !important;
     }
 
     .dropdown-menu {
-        background-color: #bf8010 !important;
+        background-color: #bf8010;
     }
 
     .nav > li {
         background-color: #000000;
     }
 
-    .navbar-nav .dropdown .dropdown-menu{
-        display: none !important;
-    }
-    .navbar-nav .dropdown.open .dropdown-menu{
-        display: block !important;
+    .nav.navbar-nav {
+        background-color: black;
     }
 }
 
@@ -270,20 +282,23 @@ hr {
         background-color: black;
     }
 
-    #content {
-        font-size: 12px;
-    }
-
-    .nav.navbar-nav {
-        background-color: black;
+    .nav > li {
+        background-color: #000000;
     }
 
     .dropdown-menu {
-        background-color: #bf8010;
+        background-color: #bf8010 !important;
     }
 
-    .nav > li {
-        background-color: #000000;
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        background-color: #bf8010;
+        padding-left: 0;
+        margin-left: 5px;
+        margin-right: 7px;
+    }
+
+    #content {
+        font-size: 12px;
     }
 }
 
