@@ -1,6 +1,11 @@
 /**
 * closest font: cfadetb, cfadet
 */
+@font-face {
+    font-family: 'cfadetb';
+    src: url("../fonts/cf%20adaptive/cfadetb.ttf") ;
+}
+
 body {
     background-color: #000;
     font-family: cfadetb;
@@ -12,21 +17,6 @@ body {
 .navbar.navbar-default.navbar-static-top {
     background-color: black;
     font-size: 20px;
-}
-
-@font-face {
-    font-family: 'cfadet';
-    src: url("../fonts/cf%20adaptive/cfadet_.ttf") ;
-}
-
-@font-face {
-    font-family: 'cfadetb';
-    src: url("../fonts/cf%20adaptive/cfadetb.ttf") ;
-}
-
-@font-face {
-    font-family: 'cfadgeb';
-    src: url("../fonts/cf%20adaptive/cfadgeb.ttf") ;
 }
 
 .navbar-static-top {
@@ -61,10 +51,16 @@ body {
 
 }
 
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .hover > a {
     color: #fff;
     background-color: #bf8010;
 }
+
+/*ul.nav li.dropdown:hover > ul.dropdown-menu {*/
+    /*display: block;*/
+/*}*/
 
 .navbar-nav > li > .dropdown-menu {
     background-color: #bf8010;
@@ -278,4 +274,6 @@ hr {
 
 #content {
     margin-bottom: 66px;
+    color: #fefefe;
 }
+
