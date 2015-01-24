@@ -16,6 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/navbar-static-top.css" rel="stylesheet">
+    <link href="css/custom-bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -69,7 +70,23 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">ΑΡΧΙΚΗ</a></li>
-                <li><a href="#about">ΕΙΚΟΝΕΣ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ΕΙΚΟΝΕΣ<span
+                            ></span></a>
+                    <ul class="dropdown-menu" role="menu" id="forites-menu">
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#">ΦΟΡΗΤΕΣ</a>
+                            <ul class="dropdown-menu" id="forites-sbmenu">
+                                <li><a tabindex="-1" href="#">ΙΗΣΟΥΣ ΧΡΙΣΤΟΣ</a></li>
+                                <li><a href="#">ΘΕΟΤΟΚΟΣ</a></li>
+                                <li><a href="#">ΠΑΡΑΣΤΑΣΕΙΣ</a></li>
+                                <li><a href="#">ΑΓΙΟΙ</a></li>
+                                <li><a href="#">ΑΓΓΕΛΟΙ</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ΔΙΑΚΟΣΜΗΣΗ<span
                             ></span></a>
@@ -82,6 +99,26 @@
                 <li><a href="#about">ΞΥΛΟ</a></li>
                 <li><a href="#about">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
             </ul>
+
+
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">More options</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Second level</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#">More..</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">3rd level</a></li>
+                                <li><a href="#">3rd level</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Second level</a></li>
+                        <li><a href="#">Second level</a></li>
+                    </ul>
+                </li>
+            </ul>
+
         </div>
         <!--/.nav-collapse -->
     </div>
