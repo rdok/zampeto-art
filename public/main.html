@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="zampetoArtApp" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
           content="The Orthodox Byzantine icon and the art of iconography, has its roots in the Byzantine painting pictures.">
     <meta name="author" content="Zampeto-Art">
     <link rel="icon" href="/favicon.ico">
+    <base href="/">
 
     <title>Zampeto-Art</title>
 
@@ -26,8 +27,7 @@
     <![endif]-->
 </head>
 
-<body>
-
+<body ng-controller="PageController as pageCtrl">
 
 <!-- Static navbar -->
 <nav class="navbar navbar-default navbar-static-top">
@@ -69,7 +69,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">ΑΡΧΙΚΗ</a></li>
+                <li ng-class="{active: $route.current.activeTab == '/'}">
+                    <a href="/#">ΑΡΧΙΚΗ</a>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button"
                        aria-expanded="false">ΕΙΚΟΝΕΣ<span
@@ -98,7 +100,7 @@
                         <li><a href="#">ΕΠΙ ΓΥΑΛΙΟΥ</a></li>
                     </ul>
                 </li>
-                <li><a href="#about">ΞΥΛΟ</a></li>
+                <li ng-class="{active: $route.current.activeTab == '#ksylo'}"><a href="#ksylo">ΞΥΛΟ</a></li>
                 <li><a href="#about">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
             </ul>
 
@@ -108,42 +110,11 @@
     </div>
 </nav>
 
-
 <hr/>
 
-<div class="container" id="content">
-    <div class="row">
-        <div class="col-md-6 text-uppercase text-justify">
-            <img style='float:left;width:100px;height:100px; margin-right:10px;' src="img/K.png">
 
-            <p>αλως ηρθατε στις σελιδες μου απο τις οποιες η εικονα αποτελει σταθμο της καλλτεχνικης
-                μου διαδρομης.
-                <br/>
-                Η Ορθοδοξη Βυζαντινη εικονα και η τεχνη της αγιογραφιας, εχει τις ριζες<br/> της στην Βυζαντινη
-                ζωγραφικη των
-                εικονων . Αποκτα μοναδικο υφος και χαρη στην ιδιοφυΐα του εκαστου ζωγραφου, προσπαθωντας να ξεπερασει τα
-                ορια της τεχνης του τοπου του και του καιρου του, ετσι ωστε η εικονα να μην ειναι μονο αφηγηματικη και
-                διδακτικη αλλα και αντικειμενο λατρειας , μεχρι του σημειου να αποκτα κανεις την εντυπωση οτι σε αυτη
-                υποτασσονται τα παντα, με το δε καλλος ως αρμονια να ερχεται σε δευτερη μοιρα .
-            </p>
-            <br/>
-
-            <p style="text-indent: 50px;">Στην εικονα αντικριζουμε την υποσταση του σεσαρκωμενου Θεου Λογου, 
-             Ζωγραφισμενο επανω σε χρυσο καμπο , να εκφραζεται με τροπο εμφατικο.</p>
-            <br/>
-
-            <p style="text-indent: 50px;">Η επεξεργασια του χρωματος στην εικονα, κατα τα προτυπα των παλαιων Αγιογραφων
-                μαζι με την ρευστη
-                αποδοση
-                της παλλομενης ανθρωπινης μορφης , φανερωνουν τα γνωρισματα του υφους μου. Χρωματα δουλευμενα με πυκνες
-                πινελιες αναμιγνυονται .Η σαρκα πλαθεται προσπαθωντας να είναι καθρεφτης της εκκλησιαστικης μας ζωης και
-                εικονουργωντας, να σαρκωσω τον εκκλησιαστικο Λογο χρωματουργικα .</p>
-        </div>
-        <div class="col-md-6">
-            <img src="img/gavriil-optimized.jpg" class="img-responsive" alt="Image of Gavril"/>
-        </div>
-    </div>
-</div>
+<!-- body contents -->
+<div ng-view></div>
 
 <hr/>
 
@@ -159,7 +130,8 @@
 
     </div>
 </footer>
-<!-- Bootstrap core JavaScript
+
+<!-- Libraries
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="vendor/jquery/dist/jquery.min.js"></script>
@@ -168,8 +140,12 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 
+<!-- Angularjs Libraries -->
+<script src="vendor/angular/angular.min.js"></script>
+<script src="vendor/angular-route/angular-route.min.js"></script>
+
 <!-- Custom scripts -->
 <script src="js/main.js"></script>
-
 </body>
+
 </html>
