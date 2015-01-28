@@ -22,6 +22,7 @@
     <!-- Custom styles for this template -->
     <link href="/lib/css/navbar-static-top.css" rel="stylesheet">
     <link href="/lib/css/custom-bootstrap.css" rel="stylesheet">
+    <link href="/lib/css/animations.css" rel="stylesheet">
     <link rel="stylesheet" href="lib/css/main.css"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -130,11 +131,9 @@
 
 <hr/>
 
-<div class="container" id="content">
-
+<div id="content" class="container view-animate-container">
     <!-- body contents -->
-    <div ng-view></div>
-
+    <div ng-view class="view-animate"></div>
 </div>
 
 <hr/>
@@ -168,6 +167,8 @@
 <script src="/lib/packages/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="/lib/packages/angular-loading-bar/build/loading-bar.min.js"></script>
 <script src="/lib/packages/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js"></script>
+<script src="/lib/packages/angular-animate/angular-animate.min.js"></script>
+
 <!-- Masonry -->
 <script src="/lib/packages/imagesloaded/imagesloaded.pkgd.min.js"></script>
 <script src="/lib/packages/masonry/dist/masonry.pkgd.min.js"></script>

@@ -20,7 +20,7 @@
 			thumb      : '/lib/img/pages/ksylo/gallery-thumb-2.png'
 		},
 		{
-			title      : 'Γαλέρα',
+
 			description: 'Τέμπερα σε πάτο βαρελιού, διακόσμιση χρυσό 24Κ',
 			url        : '/lib/img/pages/ksylo/gallery-full-3.jpeg',
 			thumb      : '/lib/img/pages/ksylo/gallery-thumb-3.png'
@@ -57,7 +57,7 @@
 		},
 	];
 
-	var app = angular.module('zampetoArtApp', ['ngRoute', 'bootstrapLightbox', 'wu.masonry']);
+	var app = angular.module('zampetoArtApp', ['ngRoute', 'bootstrapLightbox', 'wu.masonry', 'ngAnimate']);
 
 	/**
 	 * Configure routes
