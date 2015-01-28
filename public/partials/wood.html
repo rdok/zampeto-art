@@ -1,17 +1,17 @@
 <div class="row" ng-controller="WoodPaintingController as woodPaintingCtrl">
+    <div masonry>
+        <div  ng-repeat="woodPainting in woodPaintingCtrl.woodPaintings">
+            <div class="masonry-brick">
+                <div class="caption">
+                    <h3>{{ woodPainting.title }}</h3>
 
-    <div class="col-sm-6 col-md-3" ng-repeat="woodPainting in woodPaintingCtrl.woodPaintings">
-        <div class="thumbnail">
-            <div class="caption">
-                <h3>{{ woodPainting.title }}</h3>
-
-                <p>{{ woodPainting.description }}</p>
+                    <p>{{ woodPainting.description }}</p>
+                </div>
+                <a ng-click="woodPaintingCtrl.openLightboxModal($index)">
+                    <img style="max-width: 200px" ng-src="{{ woodPainting.thumb }}"/>
+                </a>
             </div>
-            <a ng-click="woodPaintingCtrl.openLightboxModal($index)">
-                <img ng-src="{{ woodPainting.thumb }}"/>
-            </a>
         </div>
     </div>
-
+    <!-- /.row -->
 </div>
-<!-- /.row -->
