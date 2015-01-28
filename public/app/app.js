@@ -6,6 +6,19 @@
 (function ()
 {
 
+	var woodJSON = [
+		{
+			title      : 'Γαλέρα',
+			description: 'Τέμπερα σε πάτο βαρελιού, διακόσμιση χρυσό 24Κ',
+			images     : [
+				{
+					full : '/lib/img/pages/ksylo/gallery-full-1.png',
+					thumb: '/lib/img/pages/ksylo/gallery-thumb-1.png'
+				}
+			]
+		}
+	];
+
 	var app = angular.module('zampetoArtApp', ['ngRoute']);
 
 	/**
@@ -16,18 +29,18 @@
 		$routeProvider
 			// Home
 			.when("/", {
-				templateUrl: "templates/home.html",
+				templateUrl: "/partials/home.html",
 				controller : "PageController",
 				activeTab  : '/'
 			})
 			.when("/ksylo",
 			{
-				templateUrl: "templates/ksylo.html",
-				controller : "PageController",
+				templateUrl: "/partials/ksylo.html",
+				controller : "WoodPaintingCtrl as woodPaintingCtrl",
 				activeTab  : '#ksylo'
 			}) // else 404
 			.otherwise("/404", {
-				templateUrl: "templates/home.html",
+				templateUrl: "partials/home.html",
 				controller : "PageController",
 				activeTab  : '/'
 			});
@@ -40,5 +53,10 @@
 	{
 		// Expose $route to controller
 		$scope.$route = $route;
+	});
+
+	app.controller('WoodPaintingCtrl', function ()
+	{
+		this.woodPaintings = woodJSON;
 	});
 })();
