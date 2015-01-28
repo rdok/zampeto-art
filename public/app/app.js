@@ -10,16 +10,12 @@
 		{
 			title      : 'Γαλέρα',
 			description: 'Τέμπερα σε πάτο βαρελιού, διακόσμιση χρυσό 24Κ',
-			images     : [
-				{
-					full : '/lib/img/pages/ksylo/gallery-full-1.png',
-					thumb: '/lib/img/pages/ksylo/gallery-thumb-1.png'
-				}
-			]
+			url       : '/lib/img/pages/ksylo/gallery-full-1.png',
+			thumb      : '/lib/img/pages/ksylo/gallery-thumb-1.png'
 		}
 	];
 
-	var app = angular.module('zampetoArtApp', ['ngRoute']);
+	var app = angular.module('zampetoArtApp', ['ngRoute', 'bootstrapLightbox']);
 
 	/**
 	 * Configure routes
@@ -36,7 +32,7 @@
 			.when("/wood",
 			{
 				templateUrl: "/partials/wood.html",
-				controller : "WoodPaintingCtrl",
+				controller : "WoodPaintingController",
 				activeTab  : '#wood'
 			}) // else 404
 			.otherwise("/404", {
@@ -55,8 +51,12 @@
 		$scope.$route = $route;
 	});
 
-	app.controller('WoodPaintingCtrl', function ()
+	app.controller('WoodPaintingController', function (Lightbox)
 	{
 		this.woodPaintings = woodJSON;
+		this.openLightboxModal = function (index)
+		{
+			Lightbox.openModal(this.woodPaintings, index);
+		};
 	});
 })();
