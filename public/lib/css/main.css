@@ -368,3 +368,14 @@ hr {
 #diakosmisi-menu {
     padding: 24px 10px 36px 10px;
 }
+
+.masonry-brick {
+    margin: 1em;
+    display: none;
+    max-width: 200px;
+    min-height: 340px;
+}
+
+.masonry-brick.loaded {
+    display: block;
+}

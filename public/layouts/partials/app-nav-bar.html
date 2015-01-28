@@ -1,0 +1,83 @@
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div id="social" class="pull-right">
+            <div class="row">
+                <div class="col-xs-5 col-xs-push-2">
+                    <a href="#">
+                        <img ng-src="/lib/img/fcbk-logo.png">
+                    </a>
+                </div>
+                <div class="col-xs-5 col-xs-push-2">
+                    <a href="#">
+                        <img ng-src="/lib/img/twtr-logo.png">
+                    </a>
+                </div>
+            </div>
+            <div class="row top-buffer">
+
+                <div class="col-xs-5 col-xs-push-2">
+                    <a href="#">EN</a>
+                </div>
+                <div class="col-xs-4 col-xs-push-2">
+                    <a href="#">GR</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img ng-src="/lib/img/logo.png" alt="Zampeto-Art Logo">
+            </a>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active: $route.current.activeTab == '/'}">
+                    <a href="/#">ΑΡΧΙΚΗ</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button"
+                       aria-expanded="false">ΕΙΚΟΝΕΣ<span
+                            ></span></a>
+                    <ul class="dropdown-menu" role="menu" id="forites-menu">
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#">ΦΟΡΗΤΕΣ</a>
+                            <ul class="dropdown-menu" id="forites-sbmenu">
+                                <li><a tabindex="-1" href="#">ΙΗΣΟΥΣ ΧΡΙΣΤΟΣ</a></li>
+                                <li><a href="#">ΘΕΟΤΟΚΟΣ</a></li>
+                                <li><a href="#">ΠΑΡΑΣΤΑΣΕΙΣ</a></li>
+                                <li><a href="#">ΑΓΙΟΙ</a></li>
+                                <li><a href="#">ΑΓΓΕΛΟΙ</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button"
+                       aria-expanded="false">ΔΙΑΚΟΣΜΗΣΗ<span
+                            ></span></a>
+                    <ul class="dropdown-menu" role="menu" id="diakosmisi-menu">
+                        <li><a href="#">ΕΠΙ ΤΟΙΧΟΥ</a></li>
+                        <li><a href="#">ΕΠΙ ΞΥΛΟΥ</a></li>
+                        <li><a href="#">ΕΠΙ ΓΥΑΛΙΟΥ</a></li>
+                    </ul>
+                </li>
+                <li ng-class="{active: $route.current.activeTab == '#wood'}">
+                    <a href="/#wood">ΞΥΛΟ</a>
+                </li>
+                <li><a href="#about">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            </ul>
+
+
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+

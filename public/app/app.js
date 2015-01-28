@@ -67,18 +67,18 @@
 		$routeProvider
 			// Home
 			.when("/", {
-				templateUrl: "/partials/home.html",
+				templateUrl: "/pages/home.html",
 				controller : "PageController",
 				activeTab  : '/'
 			})
 			.when("/wood",
 			{
-				templateUrl: "/partials/wood.html",
+				templateUrl: "/pages/wood.html",
 				controller : "WoodPaintingController",
 				activeTab  : '#wood'
 			}) // else 404
 			.otherwise("/404", {
-				templateUrl: "partials/home.html",
+				templateUrl: "/partials/home.html",
 				controller : "PageController",
 				activeTab  : '/'
 			});
@@ -93,12 +93,47 @@
 		$scope.$route = $route;
 	});
 
-	app.controller('WoodPaintingController', function (Lightbox)
+	app.controller('WoodPaintingController', function ($http, Lightbox)
 	{
 		this.woodPaintings = woodJSON;
+		$http.get('/app/models/woods-gr.json')
+			.then(function (response)
+			{
+				var data = response.data,
+					status = response.status,
+					header = response.header,
+					config = response.config;
+				// success handler
+				console.log(data);
+				this.woodPaintings = data;
+			}, function (response)
+			{
+				var data = response.data,
+					status = response.status,
+					header = response.header,
+					config = response.config;
+				// error handler
+				console.log(data);
+			});
+
 		this.openLightboxModal = function (index)
 		{
 			Lightbox.openModal(this.woodPaintings, index);
 		};
+	});
+
+	app.directive('appNavBar', function ()
+	{
+		return {
+			restrict   : 'E',
+			templateUrl: '/layouts/partials/app-nav-bar.html'
+		}
+	});
+	app.directive('appFooter', function ()
+	{
+		return {
+			restrict   : 'E',
+			templateUrl: '/layouts/partials/app-footer.html'
+		}
 	});
 })();
