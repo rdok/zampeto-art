@@ -36,3 +36,45 @@
     left: -100%;
 }
 
+/**
+ * Fade Animations
+ * Source: http://dfsq.github.io/ngView-animation-effects/app/#/code
+ */
+.fade-custom {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 1;
+}
+
+.fade-custom.ng-enter {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+.fade-custom.ng-leave {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.fade-custom.ng-enter {
+    opacity: 0;
+}
+
+.fade-custom.ng-enter-active {
+    opacity: 1;
+}
+
+.fade-custom.ng-leave {
+    opacity: 1;
+}
+
+.fade-custom.ng-leave-active {
+    opacity: 0;
+}
+
