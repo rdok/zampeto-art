@@ -33,11 +33,11 @@
 				controller : "PageController",
 				activeTab  : '/'
 			})
-			.when("/ksylo",
+			.when("/wood",
 			{
-				templateUrl: "/partials/ksylo.html",
-				controller : "WoodPaintingCtrl as woodPaintingCtrl",
-				activeTab  : '#ksylo'
+				templateUrl: "/partials/wood.html",
+				controller : "WoodPaintingCtrl",
+				activeTab  : '#wood'
 			}) // else 404
 			.otherwise("/404", {
 				templateUrl: "partials/home.html",

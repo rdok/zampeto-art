@@ -1,4 +1,13 @@
-#Set 400 error page
+# if user access a page that does not exist redirect him index.php
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
+</IfModule>
+
+#Set 404 error page
 #Required when user refresh page, or uses a link with a subdomain
 ErrorDocument 404 /
 
