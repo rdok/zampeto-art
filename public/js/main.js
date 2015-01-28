@@ -26,7 +26,7 @@
 				controller : "PageController",
 				activeTab  : '#ksylo'
 			}) // else 404
-			.otherwise({
+			.otherwise("/404", {
 				templateUrl: "templates/home.html",
 				controller : "PageController",
 				activeTab  : '/'
@@ -41,4 +41,4 @@
 		// Expose $route to controller
 		$scope.$route = $route;
 	});
-})();;
+})();
