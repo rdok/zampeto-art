@@ -370,7 +370,7 @@ hr {
 }
 
 .masonry-brick {
-    margin: 1em;
+    margin: 1em 1em 1em 1.5em;
     display: none;
     max-width: 200px;
     min-height: 340px;
