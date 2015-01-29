@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-default navbar-static-top" >
     <div class="container">
         <div id="social" class="pull-right">
             <div class="row">
@@ -16,10 +16,10 @@
             <div class="row top-buffer">
 
                 <div class="col-xs-5 col-xs-push-2">
-                    <a href="#">EN</a>
+                    <a href ng-click="pageCtrl.selectLanguage('EN')">EN</a>
                 </div>
                 <div class="col-xs-4 col-xs-push-2">
-                    <a href="#">GR</a>
+                    <a href ng-click="pageCtrl.selectLanguage('GR')">GR</a>
                 </div>
             </div>
         </div>
@@ -39,21 +39,21 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li ng-class="{active: $route.current.activeTab == '/'}">
-                    <a href="/#">ΑΡΧΙΚΗ</a>
+                    <a href="/#">{{ pageCtrl.lang.navBar.home }}</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button"
-                       aria-expanded="false">ΕΙΚΟΝΕΣ<span
+                       aria-expanded="false">{{ pageCtrl.lang.navBar.pictures }}<span
                             ></span></a>
                     <ul class="dropdown-menu" role="menu" id="forites-menu">
                         <li class="dropdown-submenu">
-                            <a tabindex="-1" href="#">ΦΟΡΗΤΕΣ</a>
+                            <a tabindex="-1" href="#">{{ pageCtrl.lang.navBar.portable }}</a>
                             <ul class="dropdown-menu" id="forites-sbmenu">
-                                <li><a tabindex="-1" href="#">ΙΗΣΟΥΣ ΧΡΙΣΤΟΣ</a></li>
-                                <li><a href="#">ΘΕΟΤΟΚΟΣ</a></li>
-                                <li><a href="#">ΠΑΡΑΣΤΑΣΕΙΣ</a></li>
-                                <li><a href="#">ΑΓΙΟΙ</a></li>
-                                <li><a href="#">ΑΓΓΕΛΟΙ</a></li>
+                                <li><a tabindex="-1" href="#">{{ pageCtrl.lang.navBar.jesusChrist }}</a></li>
+                                <li><a href="#">{{ pageCtrl.lang.navBar.virginMary }}</a></li>
+                                <li><a href="#">{{ pageCtrl.lang.navBar.representations }}</a></li>
+                                <li><a href="#">{{ pageCtrl.lang.navBar.saints }}</a></li>
+                                <li><a href="#">{{ pageCtrl.lang.navBar.angels }}</a></li>
                             </ul>
                         </li>
 
@@ -61,18 +61,18 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button"
-                       aria-expanded="false">ΔΙΑΚΟΣΜΗΣΗ<span
+                       aria-expanded="false">{{ pageCtrl.lang.navBar.decoration }}<span
                             ></span></a>
                     <ul class="dropdown-menu" role="menu" id="diakosmisi-menu">
-                        <li><a href="#">ΕΠΙ ΤΟΙΧΟΥ</a></li>
-                        <li><a href="#">ΕΠΙ ΞΥΛΟΥ</a></li>
-                        <li><a href="#">ΕΠΙ ΓΥΑΛΙΟΥ</a></li>
+                        <li><a href="#">{{ pageCtrl.lang.navBar.onWall }}</a></li>
+                        <li><a href="#">{{ pageCtrl.lang.navBar.onWood }}</a></li>
+                        <li><a href="#">{{ pageCtrl.lang.navBar.onGlass }}</a></li>
                     </ul>
                 </li>
                 <li ng-class="{active: $route.current.activeTab == '#wood'}">
-                    <a href="/#wood">ΞΥΛΟ</a>
+                    <a href="/#wood">{{ pageCtrl.lang.navBar.wood }}</a>
                 </li>
-                <li><a href="#about">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                <li><a href="#about">{{ pageCtrl.lang.navBar.contact }}</a></li>
             </ul>
 
 

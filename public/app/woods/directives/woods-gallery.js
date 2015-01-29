@@ -5,10 +5,9 @@
  */
 (function ()
 {
-	var app = angular.module('page-woods', []);
+	var app = angular.module('page-woods', ['ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox']);
 
-	app.controller('WoodPaintingController', [
-		'$http', function ($http, Lightbox)
+	app.controller('WoodPaintingController', function ($http, Lightbox)
 		{
 			this.woodPaintings = [];
 			var currentController = this;
@@ -21,8 +20,8 @@
 
 			this.openLightboxModal = function (index)
 			{
-				Lightbox.openModal(this.woodPaintings, index);
+				Lightbox.openModal(currentController.woodPaintings, index);
 			};
 		}
-	]);
+	);
 })();
