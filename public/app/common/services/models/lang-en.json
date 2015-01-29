@@ -1,0 +1,27 @@
+{
+  "navBar": {
+    "home": "HOME",
+    "pictures": "PICTURES",
+    "portable": "PORTABLE",
+    "jesusChrist": "JESUS CHRIST",
+    "virginMary": "VIRGIN MARY",
+    "representations": "REPRESENTATIONS",
+    "saints": "SAINTS",
+    "angels": "ANGELS",
+    "decoration": "DECORATION",
+    "onWall": "ON WALL",
+    "onWood": "ON WOOD",
+    "onGlass": "ON GLASS",
+    "wood": "WOOD",
+    "contact": "CONTACT"
+  },
+  "home": {
+    "firstParagraph": "elcome to my page on which the image is a milestone of my artistic journey.<br />The Orthodox Byzantine icons and the art of iconography, is rooted<br/>in the Byzantine painting of icons. Acquires unique style and thanks to the genius of each painter, trying to push boundaries of art and the place of his time, so that the image is not only narrative and teaching as well as objects of worship, to the point one gains the impression that in this subdues everything, with no Callas as to harmony comes second.",
+    "secondParagraph": "In the picture facing the reality of sesarkomenou God's word. Painted upward in gold ground, expressed with great conviction.",
+    "thirdParagraph": "The treatment of color in the image, along the standards of old Hagiographers along with the fluid return on throbbing human form, reveal the traits of my style. Colors accrued with dense brush mixes. The flesh is conjured up trying to be a mirror of our church life and eikonourgontas to incarnacate the ecclesiastical Speech chromatourgika."
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "powerBy": "Powered By"
+  }
+}
