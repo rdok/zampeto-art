@@ -379,3 +379,7 @@ hr {
 .masonry-brick.loaded {
     display: block;
 }
+
+h3, h3 {
+    color: #BF8010;
+}
