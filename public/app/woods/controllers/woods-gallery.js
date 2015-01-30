@@ -6,6 +6,11 @@
 (function () {
 	var app = angular.module('page-woods', ['ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox']);
 
+	app.config(function (LightboxProvider) {
+		// set a custom template
+		LightboxProvider.templateUrl = '/app/woods/controllers/lightbox-template.html';
+	});
+
 	app.controller('WoodPaintingController', function ($http, Lightbox) {
 			this.woodPaintings = [];
 			var currentController = this;
@@ -18,18 +23,6 @@
 			this.openLightboxModal = function (index) {
 				Lightbox.openModal(currentController.woodPaintings, index);
 			};
-
-			$("[rel='tooltip']").tooltip();
-
-			$('.caption').hover(
-				function () {
-					$(this).find('.caption-hover-animation').slideDown(250); //.fadeIn(250)
-					alert("slide down");
-				},
-				function () {
-					$(this).find('.caption-hover-animation').slideUp(250); //.fadeOut(205)
-				}
-			);
 		}
 	);
 })();
