@@ -15,6 +15,7 @@
         height: 1200px !important;
     }
 }
+
 @media (max-width: 456px) {
     .view-animate-container {
         height: 2800px !important;
@@ -52,3 +53,34 @@
     left: -100%;
 }
 
+/**
+* http://bootsnipp.com/snippets/featured/thumbnail-hover-without-javascript
+*/
+.thumbnail-hover {
+    position: relative;
+    cursor: zoom-in;
+    overflow: hidden;
+}
+
+.caption-hover {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    background: url("/lib/img/pages/common/zoom.png") no-repeat scroll 50% center #111;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    text-align: center;
+    color: #fff !important;
+    z-index: 2;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+.thumbnail-hover:hover .caption-hover {
+    top: 0%;
+}

@@ -383,3 +383,12 @@ hr {
 h3, h3 {
     color: #BF8010;
 }
+
+.caption {
+    min-height: 110px;
+}
+
+/* center container with CSS */
+#fit-width .masonry {
+    margin: 0 auto;
+}

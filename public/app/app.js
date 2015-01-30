@@ -3,16 +3,14 @@
  * @author Rizart Dokollari
  * @version 1/27/2015
  */
-(function ()
-{
+(function () {
 
 	var app = angular.module('zampetoArtApp', ['ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox', 'page-common', 'page-woods',]);
 
 	/**
 	 * Configure routes
 	 */
-	app.config(function ($routeProvider, $locationProvider)
-	{
+	app.config(function ($routeProvider, $locationProvider) {
 		$routeProvider
 			// Home
 			.when("/", {
@@ -36,33 +34,27 @@
 		$locationProvider.html5Mode(true);
 	});
 
-	app.controller('PageController', function ($http, $scope, $route, $sce)
-	{
+	app.controller('PageController', function ($http, $scope, $route, $sce) {
 		// Expose $route to controller
 		$scope.$route = $route;
 
 		var currentCtrl = this;
 
 		$http.get('/app/common/services/models/lang-gr.json')
-			.success(function (data)
-			{
+			.success(function (data) {
 				currentCtrl.lang = data;
 			});
-		this.selectLanguage = function (lang)
-		{
-			if (lang === "EN")
-			{
+		this.selectLanguage = function (lang) {
+			if (lang === "EN") {
 				$http.get('/app/common/services/models/lang-en.json')
-					.success(function (data)
-					{
+					.success(function (data) {
 						currentCtrl.lang = data;
 					});
 				return;
 			}
 
 			$http.get('/app/common/services/models/lang-gr.json')
-				.success(function (data)
-				{
+				.success(function (data) {
 					currentCtrl.lang = data;
 				});
 		};
@@ -72,8 +64,7 @@
 		 * @param htmlCode
 		 * @returns {*}
 		 */
-		currentCtrl.toTrusted = function (htmlCode)
-		{
+		currentCtrl.toTrusted = function (htmlCode) {
 			return $sce.trustAsHtml(htmlCode);
 		}
 	});
