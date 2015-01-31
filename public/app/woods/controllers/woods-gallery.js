@@ -33,11 +33,17 @@
 						return true;
 					});
 				});
-
 			this.openLightboxModal = function (index) {
 				Lightbox.openModal(currentController.woodPaintings, index);
 			};
-
 		}
 	);
+
+	app.directive('dropdownMenu', function () {
+		return {
+			link: function (scope, elem) {
+				elem.dropdownHover();
+			}
+		};
+	});
 })();
