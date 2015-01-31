@@ -34,19 +34,23 @@
 
 <body ng-controller="PageController as pageCtrl">
 
-<!-- Static nav-bar -->
-<app-nav-bar></app-nav-bar>
+<div class="wrapper>">
 
-<hr/>
+    <!-- Static nav-bar -->
+    <app-nav-bar></app-nav-bar>
 
-<!-- body contents -->
-<div id="content" class="container">
-    <div ng-view></div>
+    <hr/>
+
+    <!-- body contents -->
+    <div id="content" class="container">
+        <div ng-view></div>
+    </div>
+
+    <div class="push"></div>
+    <hr/>
 </div>
 
-<hr/>
-
-<app-footer></app-footer>
+<app-footer class="footer"></app-footer>
 
 
 <!-- Libraries
