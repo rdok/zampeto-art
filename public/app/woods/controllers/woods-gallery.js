@@ -18,11 +18,26 @@
 			$http.get('/app/woods/services/models/woods-gr.json')
 				.success(function (data) {
 					currentController.woodPaintings = data;
+
+					var $masonryGallery = $('masonry');
+					var msnry = new Masonry('#masonry-gallery');
+
+					function onLayout() {
+						console.log('layout done');
+					}
+
+					msnry.on('layoutComplete', onLayout);
+					//msnry.off('layoutComplete', onLayout);
+					msnry.on('layoutComplete', function () {
+						console.log('layout done, just this one time');
+						return true;
+					});
 				});
 
 			this.openLightboxModal = function (index) {
 				Lightbox.openModal(currentController.woodPaintings, index);
 			};
+
 		}
 	);
 })();
