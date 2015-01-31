@@ -30,6 +30,7 @@
 					//msnry.off('layoutComplete', onLayout);
 					msnry.on('layoutComplete', function () {
 						console.log('layout done, just this one time');
+						//this.reloadItems();
 						return true;
 					});
 				});

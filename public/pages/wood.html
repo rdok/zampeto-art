@@ -1,5 +1,5 @@
 <div class="row" ng-controller="WoodPaintingController as woodPaintingCtrl">
-    <div masonry masonry-options="{ transitionDuration: '1.3s', isFitWidth: true}" preserve-order id="masonry-gallery"
+    <div masonry reload-on-show masonry-options="{ transitionDuration: '1.3s', isFitWidth: true}" preserve-order id="masonry-gallery"
          class="center-block">
         <div ng-repeat="woodPainting in woodPaintingCtrl.woodPaintings">
             <div class="masonry-brick thumbnail-hover" ng-click="woodPaintingCtrl.openLightboxModal($index)"
