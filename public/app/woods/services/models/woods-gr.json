@@ -33,7 +33,7 @@
     "title": "Φορτηγό Πλοίο",
     "description": "Τέμπερα",
     "url": "/lib/img/pages/ksylo/gallery-full-6.jpeg",
-    "thumb": "/lib/img/pages/ksylo/gallery-thumb-6.jpeg"
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-6.png"
   },
   {
     "title": "Ποταμόπλοιο",
@@ -45,18 +45,66 @@
     "title": "Tο Πλοίο η Ελλάς",
     "description": "Τέμπερα",
     "url": "/lib/img/pages/ksylo/gallery-full-8.jpeg",
-    "thumb": "/lib/img/pages/ksylo/gallery-thumb-8.jpeg"
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-8.png"
   },
   {
     "title": "Πολεμικό πλοίο",
     "description": "Τέμπερα πάνω σε παλιό πλαστήρι",
     "url": "/lib/img/pages/ksylo/gallery-full-9.jpeg",
-    "thumb": "/lib/img/pages/ksylo/gallery-thumb-9.jpeg"
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-9.png"
   },
   {
-    "title": "Πολεμικό πλοίο",
+    "title": "Εκστρατεία",
     "description": "Τέμπερα πάνω σε παλιό πλαστήρι",
-    "url": "/lib/img/pages/ksylo/gallery-full-9.jpeg",
-    "thumb": "/lib/img/pages/ksylo/gallery-thumb-9.jpeg"
+    "url": "/lib/img/pages/ksylo/gallery-full-10.jpeg",
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-10.png"
+  },
+  {
+    "title": "Καίκι",
+    "description": "Τέμπερα",
+    "url": "/lib/img/pages/ksylo/gallery-full-11.jpeg",
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-11.png"
+  },
+  {
+    "title": "Ιστιοφόρο",
+    "description": "Τέμπερα",
+    "url": "/lib/img/pages/ksylo/gallery-full-12.jpeg",
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-12.png"
+  },
+  {
+    "title": "Ιστιοφόρο",
+    "description": "Τέμπερα, παλαίωση, κρακελέ",
+    "url": "/lib/img/pages/ksylo/gallery-full-13.jpeg",
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-13.png"
+  },
+  {
+    "title": "Καίκι",
+    "description": "Τέμπερα, παλαίωση, κρακελέ",
+    "url": "/lib/img/pages/ksylo/gallery-full-14.jpeg",
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-14.png"
+  },
+  {
+    "title": "Τοπίο",
+    "description": "Τέμπερα, παλαίωση",
+    "url": "/lib/img/pages/ksylo/gallery-full-15.jpeg",
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-15.png"
+  },
+  {
+    "title": "Παλεύοντας με τα κύματα",
+    "description": "Τέμπερα, παλαίωση",
+    "url": "/lib/img/pages/ksylo/gallery-full-16.jpeg",
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-16.png"
+  },
+  {
+    "title": "Ιστιοφόρο",
+    "description": "Τέμπερα, παλαίωση",
+    "url": "/lib/img/pages/ksylo/gallery-full-17.jpeg",
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-17.png"
+  },
+  {
+    "title": "Ιστιοφόρο",
+    "description": "Τέμπερα, παλαίωση",
+    "url": "/lib/img/pages/ksylo/gallery-full-18.jpeg",
+    "thumb": "/lib/img/pages/ksylo/gallery-thumb-18.png"
   }
 ]
