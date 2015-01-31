@@ -5,21 +5,21 @@
 }
 
 @media (max-width: 1200px) {
-    .view-animate-container {
-        height: 1100px !important;
-    }
+    /*.view-animate-container {*/
+        /*height: 1100px !important;*/
+    /*}*/
 }
 
 @media (max-width: 684px) {
-    .view-animate-container {
-        height: 1200px !important;
-    }
+    /*.view-animate-container {*/
+        /*height: 1200px !important;*/
+    /*}*/
 }
 
 @media (max-width: 456px) {
-    .view-animate-container {
-        height: 2800px !important;
-    }
+    /*.view-animate-container {*/
+        /*height: 2800px !important;*/
+    /*}*/
 }
 
 .view-animate {
