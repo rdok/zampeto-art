@@ -121,6 +121,36 @@ hr {
     margin-bottom: 45px;
 }
 
+#portables-sbmenu > li > a {
+    margin: 0;
+    padding: 9px 58px 0 0;
+    line-height: 15px !important;
+    font-size: 12px;
+    color: #000;
+}
+
+#portables-sbmenu > li:first-child > a {
+    padding-top: 0px;
+}
+
+#portables-sbmenu {
+    padding: 2px 10px 5px 50px;
+    margin: -53px 0 0 0px;
+    border-bottom: 1px solid #7e550b !important;
+}
+
+#portables-menu > li > a {
+    border: none;
+    color: #fefefe;
+    line-height: 15px !important;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+#portables-menu {
+    padding: 54px 42px 54px 0px;
+}
+
 @media (min-width: 1200px) {
     .container {
         width: 963px;
@@ -258,6 +288,13 @@ hr {
 
 @media (max-width: 767px) {
 
+    #portables-menu {
+        padding: 0px 42px 54px 8px;
+    }
+
+    #portables-sbmenu {
+        margin: -3px 0 0 0px;
+    }
     .navbar-nav .dropdown .dropdown-menu {
         display: none !important;
     }
@@ -314,36 +351,6 @@ hr {
 #content {
     margin-bottom: 66px;
     color: #fefefe;
-}
-
-#forites-sbmenu > li > a {
-    margin: 0;
-    padding: 9px 58px 0 0;
-    line-height: 15px !important;
-    font-size: 12px;
-    color: #000;
-}
-
-#forites-sbmenu > li:first-child > a {
-    padding-top: 0px;
-}
-
-#forites-sbmenu {
-    padding: 2px 10px 5px 50px;
-    margin: -53px 0 0 0px;
-    border-bottom: 1px solid #7e550b !important;
-}
-
-#forites-menu > li > a {
-    border: none;
-    color: #fefefe;
-    line-height: 15px !important;
-    font-size: 12px;
-    padding-left: 7px;
-}
-
-#forites-menu {
-    padding: 54px 42px 54px 0px;
 }
 
 /* Override bootstrap */
