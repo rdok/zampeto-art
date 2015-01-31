@@ -43,6 +43,7 @@
 		return {
 			link: function (scope, elem) {
 				elem.dropdownHover();
+				elem.dropdown();
 			}
 		};
 	});
