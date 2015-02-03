@@ -1,6 +1,6 @@
 <div class="row" ng-controller="WoodPaintingController as woodPaintingCtrl">
     <div masonry reload-on-show masonry-options="{ transitionDuration: '1.3s', isFitWidth: true}" preserve-order id="masonry-gallery"
-         class="center-block">
+         class="center-block col-xs-10 col-xs-push-0">
         <div ng-repeat="woodPainting in woodPaintingCtrl.woodPaintings">
             <div class="masonry-brick thumbnail-hover" ng-click="woodPaintingCtrl.openLightboxModal($index)"
                     >
@@ -11,7 +11,7 @@
                     <p>{{ woodPainting.description }}</p>
                 </div>
                 <a>
-                    <img style="max-width: 200px" ng-src="{{ woodPainting.thumb }}"/>
+                    <img style="" ng-src="{{ woodPainting.thumb }}"/>
                 </a>
             </div>
         </div>

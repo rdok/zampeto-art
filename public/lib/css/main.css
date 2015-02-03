@@ -265,12 +265,20 @@ hr {
 
 }
 
+.masonry-brick > a > img {
+    max-width: 200px
+}
+
 /**
 *
 */
 @media (min-width: 354px) and (max-width: 767px) {
     .navbar-brand img {
         margin-top: -5em;
+    }
+
+    .masonry-brick > a > img {
+        max-width: 350px
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -336,6 +344,12 @@ hr {
     }
 }
 
+@media (max-width: 469px) {
+    #masonry-gallery {
+        left: 25%;
+    }
+}
+
 /**
 * Apple iPhone 3GS, Apple iPhone 4, Apple iPhone 5
 */
@@ -346,6 +360,10 @@ hr {
 
     #content {
         font-size: 12px;
+    }
+
+    .masonry-brick > a > img {
+        max-width: 150px;
     }
 }
 
@@ -420,5 +438,5 @@ html, body {
     height: 55px; /* .push must be the same height as .footer */
 }
 
-/* Sticky Footer by Ryan Fait http://ryanfait.com/
+/* Sticky Footer by Ryan Fait http://ryanfait.com/ */
 
