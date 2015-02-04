@@ -422,17 +422,17 @@ h3, h3 {
 }
 
 #contact-form > form > .form-group:first-child > input {
-    background: url('/lib/img/pages/contact/input-avatar.png') no-repeat scroll 10px 8px #fff;
+    background: url('/lib/img/contact/input-avatar.png') no-repeat scroll 10px 8px #fff;
     padding-left: 40px;
 }
 
 #contact-form > form > .form-group:nth-child(2) > input {
-    background: url('/lib/img/pages/contact/input-email.png') no-repeat scroll 10px 11px #fff;
+    background: url('/lib/img/contact/input-email.png') no-repeat scroll 10px 11px #fff;
     padding-left: 40px;
 }
 
 #contact-form > form > .form-group:nth-child(3) > input {
-    background: url('/lib/img/pages/contact/input-subject.png') no-repeat scroll 10px 11px #fff;
+    background: url('/lib/img/contact/input-subject.png') no-repeat scroll 10px 11px #fff;
     padding-left: 40px;
 }
 
