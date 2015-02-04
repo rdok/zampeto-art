@@ -4,12 +4,12 @@
             <div class="row">
                 <div class="col-xs-5 col-xs-push-2">
                     <a href="#">
-                        <img ng-src="/lib/img/fcbk-logo.png">
+                        <img ng-src="/lib/img/common/fcbk-logo.png">
                     </a>
                 </div>
                 <div class="col-xs-5 col-xs-push-2">
                     <a href="#">
-                        <img ng-src="/lib/img/twtr-logo.png">
+                        <img ng-src="/lib/img/common/twtr-logo.png">
                     </a>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img ng-src="/lib/img/logo.png" alt="Zampeto-Art Logo">
+                <img ng-src="/lib/img/common/logo.png" alt="Zampeto-Art Logo">
             </a>
 
         </div>
@@ -72,7 +72,9 @@
                 <li ng-class="{active: $route.current.activeTab == '#wood'}">
                     <a href="/#wood">{{ pageCtrl.lang.navBar.wood }}</a>
                 </li>
-                <li><a href="#about">{{ pageCtrl.lang.navBar.contact }}</a></li>
+
+                <li ng-class="{active: $route.current.activeTab == '#contact'}">
+                    <a href="/#contact">{{ pageCtrl.lang.navBar.contact }}</a></li>
             </ul>
 
 

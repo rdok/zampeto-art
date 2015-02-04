@@ -40,12 +40,12 @@
 		}
 	);
 
-	app.directive('dropdownMenu', function () {
-		return {
-			link: function (scope, elem) {
-				elem.dropdownHover();
-				elem.dropdown();
-			}
-		};
-	});
+	//app.directive('dropdownMenu', function () {
+	//	return {
+	//		link: function (scope, elem) {
+	//			elem.dropdownHover();
+	//			elem.dropdown();
+	//		}
+	//	};
+	//});
 })();

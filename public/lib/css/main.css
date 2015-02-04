@@ -410,6 +410,104 @@ h3, h3 {
     color: #BF8010;
 }
 
+#contact-form {
+    background-color: #F2F2F2;
+    padding: 20px 27px 30px 29px;
+    border-top: 1px solid #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+#contact-form > form > .form-group > input {
+    border-radius: 2px;
+}
+
+#contact-form > form > .form-group:first-child > input {
+    background: url('/lib/img/pages/contact/input-avatar.png') no-repeat scroll 10px 8px #fff;
+    padding-left: 40px;
+}
+
+#contact-form > form > .form-group:nth-child(2) > input {
+    background: url('/lib/img/pages/contact/input-email.png') no-repeat scroll 10px 11px #fff;
+    padding-left: 40px;
+}
+
+#contact-form > form > .form-group:nth-child(3) > input {
+    background: url('/lib/img/pages/contact/input-subject.png') no-repeat scroll 10px 11px #fff;
+    padding-left: 40px;
+}
+
+#contact-form > form > .form-group:nth-child(4) > textarea {
+    border-radius: 2px 2px 2px 2px;
+    color: #6f6f6f;
+}
+
+#contact-form > form > .form-group:nth-child(5) > button {
+    border: 1px solid #D8D8D8;
+    -webkit-box-shadow: #D8D8D8 0px 5px 2px;
+    -moz-box-shadow: #D8D8D8 0px 5px 2px;
+    box-shadow: #D8D8D8 0px 5px 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 1px;
+    padding: 14px 10px 14px 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: #45413B;
+    background-color: #FFFFFF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EBEBEB));
+    background-image: -webkit-linear-gradient(top, #FFFFFF, #EBEBEB);
+    background-image: -moz-linear-gradient(top, #FFFFFF, #EBEBEB);
+    background-image: -ms-linear-gradient(top, #FFFFFF, #EBEBEB);
+    background-image: -o-linear-gradient(top, #FFFFFF, #EBEBEB);
+    background-image: linear-gradient(to bottom, #FFFFFF, #EBEBEB);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FFFFFF, endColorstr=#EBEBEB);
+}
+
+#contact-form > form > .form-group:nth-child(5) > button:hover {
+    border: 1px solid #cccccc;
+    background-color: #e6e6e6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#BF8010));
+    background-image: -webkit-linear-gradient(top, #e6e6e6, #BF8010);
+    background-image: -moz-linear-gradient(top, #e6e6e6, #BF8010);
+    background-image: -ms-linear-gradient(top, #e6e6e6, #BF8010);
+    background-image: -o-linear-gradient(top, #e6e6e6, #BF8010);
+    background-image: linear-gradient(to bottom, #e6e6e6, #BF8010);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e6e6e6, endColorstr=#BF8010);
+}
+
+#contact-form-header {
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(top, #F2F2F2 0%, #E6E6E6 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #F2F2F2 0%, #E6E6E6 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(top, #F2F2F2 0%, #E6E6E6 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F2F2F2), color-stop(1, #E6E6E6));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #F2F2F2 0%, #E6E6E6 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to bottom, #F2F2F2 0%, #E6E6E6 100%);
+
+    border-bottom: 1px solid #c4c4c4;
+
+    font-size: 18px;
+    color: #32302d;
+    line-height: 55px;
+    padding-left: 30px;
+    padding-right: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+#contact-form-header > p {
+    margin: 0px;
+}
+
 .caption {
     min-height: 110px;
 }
@@ -437,6 +535,4 @@ html, body {
 .footer, .push {
     height: 55px; /* .push must be the same height as .footer */
 }
-
-/* Sticky Footer by Ryan Fait http://ryanfait.com/ */
 
