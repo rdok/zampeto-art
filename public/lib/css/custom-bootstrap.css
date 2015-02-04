@@ -39,3 +39,7 @@
 .invisible {
     visibility: hidden;
 }
+
+.modal-content {
+    background: transparent;
+}
