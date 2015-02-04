@@ -66,6 +66,7 @@
                 });
         };
 
+
         /**
          * http://stackoverflow.com/a/20710548/2790481
          * @param htmlCode
@@ -74,6 +75,14 @@
         currentCtrl.toTrusted = function (htmlCode) {
             return $sce.trustAsHtml(htmlCode);
         }
+    });
+    app.directive('dropdownMenu', function () {
+        return {
+            link: function (scope, elem) {
+                elem.dropdownHover();
+                elem.dropdown();
+            }
+        };
     });
 
 })();

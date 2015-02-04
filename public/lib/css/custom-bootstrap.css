@@ -35,3 +35,7 @@
 .form-group {
     margin-bottom: 9px;
 }
+
+.invisible {
+    visibility: hidden;
+}

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div id="social" class="pull-right">
-            <div class="row">
+            <div class="row" ng-class="{ invisible :$route.current.activeTab == '#contact' }">
                 <div class="col-xs-5 col-xs-push-2">
                     <a href="#">
                         <img ng-src="/lib/img/common/fcbk-logo.png">
@@ -14,7 +14,6 @@
                 </div>
             </div>
             <div class="row top-buffer">
-
                 <div class="col-xs-5 col-xs-push-2">
                     <a href ng-click="pageCtrl.selectLanguage('EN')">EN</a>
                 </div>
