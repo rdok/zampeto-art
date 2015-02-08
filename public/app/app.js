@@ -5,7 +5,10 @@
  */
 (function () {
 
-	var app = angular.module('zampetoArtApp', ['ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox', 'page-common', 'page-woods', 'page-contact']);
+	var app = angular.module('zampetoArtApp', [
+		'ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox', 'page-common',
+		'page-woods', 'page-contact', 'page-pictures-portables-angels'
+	]);
 
 	/**
 	 * Configure routes
@@ -17,6 +20,12 @@
 				templateUrl: "/pages/home.html",
 				controller : "PageController",
 				activeTab  : '/'
+			})
+			.when("/pictures/portable/angels",
+			{
+				templateUrl: "/pages/pictures/portable/angels.html",
+				controller : "PicturesPortablesAngelsPaintingController",
+				activeTab  : '#pictures-portable-angels'
 			})
 			.when("/wood",
 			{
@@ -41,7 +50,7 @@
 		$locationProvider.html5Mode(true);
 	});
 
-	app.controller('PageController', function ($http, $scope, $route, $sce) {
+	app.controller('PageController', function ($http, $scope, $route, $sce, $rootScope) {
 		// Expose $route to controller
 		$scope.$route = $route;
 
@@ -51,20 +60,22 @@
 			.success(function (data) {
 				currentCtrl.lang = data;
 			});
+
 		this.selectLanguage = function (lang) {
+			$rootScope.lang = lang;
+
 			if (lang === "EN") {
 				$http.get('/app/common/services/models/lang-en.json')
 					.success(function (data) {
 						currentCtrl.lang = data;
-						currentCtrl.apply();
 					});
 				return;
 			}
 
+			// else translate to greek
 			$http.get('/app/common/services/models/lang-gr.json')
 				.success(function (data) {
 					currentCtrl.lang = data;
-					currentCtrl.apply();
 				});
 		};
 
