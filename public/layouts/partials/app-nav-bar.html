@@ -3,17 +3,17 @@
         <div id="social" class="pull-right">
             <div class="row">
                 <div class="col-xs-4 col-xs-push-2">
-                    <a href="#">
+                    <a ng-href="/">
                         <img ng-src="{{pageCtrl.lang.navBar.facebookArt}}">
                     </a>
                 </div>
                 <div class="col-xs-4 col-xs-push-2">
-                    <a href="#">
+                    <a ng-href="/">
                         <img ng-src="{{pageCtrl.lang.navBar.facebookHagyography}}">
                     </a>
                 </div>
                 <div class="col-xs-4 col-xs-push-2">
-                    <a href="#">
+                    <a ng-href="/">
                         <img ng-src="/lib/img/common/twtr-logo.png">
                     </a>
                 </div>
@@ -21,10 +21,10 @@
 
             <div class="row top-buffer">
                 <div class="col-xs-1 col-xs-push-9">
-                    <a href ng-click="pageCtrl.selectLanguage('EN')">EN</a>
+                    <a ng-href="#" ng-click="pageCtrl.selectLanguage('EN')">EN</a>
                 </div>
                 <div class="col-xs-1 col-xs-push-9">
-                    <a href ng-click="pageCtrl.selectLanguage('GR')">GR</a>
+                    <a ng-href="#" ng-click="pageCtrl.selectLanguage('GR')">GR</a>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" ng-href="#">
                 <img ng-src="/lib/img/common/logo.png" alt="Zampeto-Art Logo">
             </a>
 
@@ -45,42 +45,42 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li ng-class="{active: $route.current.activeTab == '/'}">
-                    <a href="/#">{{ pageCtrl.lang.navBar.home }}</a>
+                    <a ng-href="/#">{{ pageCtrl.lang.navBar.home }}</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" role="button" aria-expanded="false" dropdown-menu>{{
+                    <a ng-href="#" class="dropdown-toggle" role="button" aria-expanded="false" dropdown-menu>{{
                         pageCtrl.lang.navBar.pictures }}
                         <span></span></a>
                     <ul class="dropdown-menu" role="menu" id="portables-menu">
                         <li class="dropdown-submenu">
-                            <a tabindex="-1" href="#">{{ pageCtrl.lang.navBar.portable }}</a>
+                            <a tabindex="-1" ng-href="#">{{ pageCtrl.lang.navBar.portable }}</a>
                             <ul class="dropdown-menu" id="portables-sbmenu">
-                                <li><a tabindex="-1" href="#">{{ pageCtrl.lang.navBar.jesusChrist }}</a></li>
-                                <li><a href="#">{{ pageCtrl.lang.navBar.virginMary }}</a></li>
-                                <li><a href="#">{{ pageCtrl.lang.navBar.representations }}</a></li>
-                                <li><a href="#">{{ pageCtrl.lang.navBar.saints }}</a></li>
-                                <li><a href="#">{{ pageCtrl.lang.navBar.angels }}</a></li>
+                                <li><a tabindex="-1" ng-href="#">{{ pageCtrl.lang.navBar.jesusChrist }}</a></li>
+                                <li><a ng-href="#">{{ pageCtrl.lang.navBar.virginMary }}</a></li>
+                                <li><a ng-href="#">{{ pageCtrl.lang.navBar.representations }}</a></li>
+                                <li><a ng-href="#">{{ pageCtrl.lang.navBar.saints }}</a></li>
+                                <li><a ng-href="#">{{ pageCtrl.lang.navBar.angels }}</a></li>
                             </ul>
                         </li>
 
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button"
+                    <a ng-href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button"
                        aria-expanded="false" dropdown-menu>{{ pageCtrl.lang.navBar.decoration }}<span
                             ></span></a>
                     <ul class="dropdown-menu" role="menu" id="diakosmisi-menu">
-                        <li><a href="#">{{ pageCtrl.lang.navBar.onWall }}</a></li>
-                        <li><a href="#">{{ pageCtrl.lang.navBar.onWood }}</a></li>
-                        <li><a href="#">{{ pageCtrl.lang.navBar.onGlass }}</a></li>
+                        <li><a ng-href="#">{{ pageCtrl.lang.navBar.onWall }}</a></li>
+                        <li><a ng-href="#">{{ pageCtrl.lang.navBar.onWood }}</a></li>
+                        <li><a ng-href="#">{{ pageCtrl.lang.navBar.onGlass }}</a></li>
                     </ul>
                 </li>
                 <li ng-class="{active: $route.current.activeTab == '#wood'}">
-                    <a href="/#wood">{{ pageCtrl.lang.navBar.wood }}</a>
+                    <a ng-href="/#wood">{{ pageCtrl.lang.navBar.wood }}</a>
                 </li>
 
                 <li ng-class="{active: $route.current.activeTab == '#contact'}">
-                    <a href="/#contact">{{ pageCtrl.lang.navBar.contact }}</a></li>
+                    <a ng-href="/#contact">{{ pageCtrl.lang.navBar.contact }}</a></li>
             </ul>
 
 
