@@ -56,6 +56,7 @@
 				$http.get('/app/common/services/models/lang-en.json')
 					.success(function (data) {
 						currentCtrl.lang = data;
+						currentCtrl.apply();
 					});
 				return;
 			}
@@ -63,6 +64,7 @@
 			$http.get('/app/common/services/models/lang-gr.json')
 				.success(function (data) {
 					currentCtrl.lang = data;
+					currentCtrl.apply();
 				});
 		};
 
