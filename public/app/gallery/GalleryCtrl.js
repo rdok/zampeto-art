@@ -12,8 +12,7 @@
 	});
 
 	app.controller('GalleryController', function ($route, $http, Lightbox) {
-		var currentRoute = $route.current.activeTab;
-		var currentGalleryUrl = getCurrentGalleryUrl(currentRoute);
+		var currentGalleryUrl = getCurrentGalleryUrl($route.current.activeTab);
 		this.pictures = [];
 		var currentController = this;
 
@@ -33,4 +32,9 @@ function getCurrentGalleryUrl(currentRoute) {
 	if (currentRoute === '#wood') {
 		return '/app/gallery/services/woods-gr.json';
 	}
+	if (currentRoute === '#pictures-portables-angels') {
+		return '/app/gallery/services/portables/angels-gr.json';
+	}
+
+	console.log(currentRoute);
 }

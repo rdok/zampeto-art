@@ -20,10 +20,9 @@
 				templateUrl: "/app/pages/home.html",
 				activeTab  : '/'
 			})
-			.when("/pictures/portlet-angels", {
-				templateUrl: "/app/pages/pictures/portlet-angels.html",
-				controller : "GalleryController",
-				activeTab  : '#pictures-portlet-angels'
+			.when("/pictures-portables-angels", {
+				templateUrl: "/app/gallery/gallery.html",
+				activeTab  : '#pictures-portables-angels'
 			})
 			.when("/wood",
 			{

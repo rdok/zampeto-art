@@ -1,5 +1,5 @@
 <div class="row" ng-controller="GalleryController as galleryCtlr">
-    <div masonry reload-on-show masonry-options="{ transitionDuration: '1.3s', isFitWidth: true}" preserve-order
+    <div masonry reload-on-show masonry-options="{ transitionDuration: '0.7s', isFitWidth: true}" preserve-order
          id="masonry-gallery" class="center-block col-xs-10 col-xs-push-0">
         <div ng-repeat="picture in galleryCtlr.pictures">
             <div class="masonry-brick thumbnail-hover" ng-click="galleryCtlr.openLightboxModal($index)">
