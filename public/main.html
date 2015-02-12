@@ -37,7 +37,7 @@
 <div class="wrapper>">
 
     <!-- Static nav-bar -->
-    <app-nav-bar></app-nav-bar>
+    <top-nav></top-nav>
 
     <hr/>
 
@@ -49,7 +49,19 @@
     <hr/>
 </div>
 
-<app-footer class="footer"></app-footer>
+<footer class="modal-footer">
+    <div class="container">
+        <div class="col-md-4 col-md-push-2 col-xs-6 col-xs-push-1">
+            {{pageCtrl.lang.footer.copyright}} © Zampeto-Art 2015
+        </div>
+
+        <div class="col-md-3 col-md-push-3 col-xs-6 col-xs-push-1">
+            {{pageCtrl.lang.footer.powerBy}}<a href="mailto:ndmdevelop@gmail.com" style="text-decoration: none;">
+            NDM</a>
+        </div>
+
+    </div>
+</footer>
 
 
 <!-- Libraries
@@ -76,9 +88,8 @@
 <script src="/lib/packages/angular-masonry/angular-masonry.js"></script>
 
 <!-- App scripts -->
-<script src="/app/contact/controllers/contact.js"></script>
-<script src="/app/woods/controllers/woods-gallery.js"></script>
-<script src="/app/common/directives/UI.js"></script>
+<script src="/app/common/layouts.js"></script>
+<script src="/app/gallery/GalleryCtrl.js"></script>
 <script src="/app/app.js"></script>
 </body>
 

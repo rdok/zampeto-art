@@ -5,7 +5,10 @@
  */
 (function () {
 
-	var app = angular.module('zampetoArtApp', ['ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox', 'page-common', 'page-woods', 'page-contact']);
+	var app = angular.module('zampetoArtApp', [
+		'ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox',
+		'common-directives'
+	]);
 
 	/**
 	 * Configure routes
@@ -15,25 +18,27 @@
 			// Home
 			.when("/", {
 				templateUrl: "/pages/home.html",
-				controller : "PageController",
 				activeTab  : '/'
+			})
+			.when("/pictures/portlet/angels", {
+				templateUrl: "/pages/pictures/portlet/angels.html",
+				controller : "PicturesController",
+				activeTab  : '#pictures-portlet-angels'
 			})
 			.when("/wood",
 			{
 				templateUrl: "/pages/wood.html",
-				controller : "WoodPaintingController",
+				controller : "GalleryController",
 				activeTab  : '#wood'
 			})
 			.when("/contact",
 			{
 				templateUrl: "/pages/contact.html",
-				controller : "ContactPaintingController",
 				activeTab  : '#contact'
 			}) // else 404
 
 			.otherwise("/404", {
 				templateUrl: "/partials/home.html",
-				controller : "PageController",
 				activeTab  : '/'
 			});
 
@@ -46,14 +51,18 @@
 		$scope.$route = $route;
 
 		var currentCtrl = this;
+		var langGrUrl = '/app/common/services/lang-gr.json';
+		var langEnUrl = '/app/common/services/lang-en.json';
 
-		$http.get('/app/common/services/models/lang-gr.json')
+		// GR english default
+		$http.get(langGrUrl)
 			.success(function (data) {
 				currentCtrl.lang = data;
 			});
+
 		this.selectLanguage = function (lang) {
 			if (lang === "EN") {
-				$http.get('/app/common/services/models/lang-en.json')
+				$http.get(langEnUrl)
 					.success(function (data) {
 						currentCtrl.lang = data;
 						currentCtrl.apply();
@@ -61,7 +70,7 @@
 				return;
 			}
 
-			$http.get('/app/common/services/models/lang-gr.json')
+			$http.get(langGrUrl)
 				.success(function (data) {
 					currentCtrl.lang = data;
 					currentCtrl.apply();
