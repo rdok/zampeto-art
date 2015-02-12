@@ -31,6 +31,9 @@
 function getCurrentGalleryUrl(currentRoute) {
 	// Pictures pages
 
+	if (currentRoute === '#pictures-portables-jesus-christ') {
+		return '/app/gallery/services/portables/jesus-christ-gr.json';
+	}
 	if (currentRoute === '#pictures-portables-mother-of-god') {
 		return '/app/gallery/services/portables/mother-of-god-gr.json';
 	}
