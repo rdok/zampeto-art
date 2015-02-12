@@ -24,6 +24,10 @@
 				templateUrl: "/app/gallery/gallery.html",
 				activeTab  : '#pictures-portables-angels'
 			})
+			.when("/pictures-portables-saints", {
+				templateUrl: "/app/gallery/gallery.html",
+				activeTab  : '#pictures-portables-saints'
+			})
 			.when("/wood",
 			{
 				templateUrl: "/app/gallery/gallery.html",

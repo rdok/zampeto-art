@@ -35,6 +35,9 @@ function getCurrentGalleryUrl(currentRoute) {
 	if (currentRoute === '#pictures-portables-angels') {
 		return '/app/gallery/services/portables/angels-gr.json';
 	}
+	if (currentRoute === '#pictures-portables-saints') {
+		return '/app/gallery/services/portables/saints-gr.json';
+	}
 
 	console.log(currentRoute);
 }
