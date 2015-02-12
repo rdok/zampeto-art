@@ -20,6 +20,10 @@
 				templateUrl: "/app/pages/home.html",
 				activeTab  : '/'
 			})
+			.when("/pictures-portables-mother-of-god", {
+				templateUrl: "/app/gallery/gallery.html",
+				activeTab  : '#pictures-portables-mother-of-god'
+			})
 			.when("/pictures-portables-representations", {
 				templateUrl: "/app/gallery/gallery.html",
 				activeTab  : '#pictures-portables-representations'
