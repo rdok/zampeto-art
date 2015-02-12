@@ -22,13 +22,12 @@
 			})
 			.when("/pictures/portlet-angels", {
 				templateUrl: "/app/pages/pictures/portlet-angels.html",
-				controller : "PicturesController",
+				controller : "GalleryController",
 				activeTab  : '#pictures-portlet-angels'
 			})
 			.when("/wood",
 			{
-				templateUrl: "/app/pages/gallery.html",
-				controller : "GalleryController",
+				templateUrl: "/app/gallery/gallery.html",
 				activeTab  : '#wood'
 			})
 			.when("/contact",

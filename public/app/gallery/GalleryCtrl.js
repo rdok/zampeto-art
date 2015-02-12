@@ -12,22 +12,25 @@
 	});
 
 	app.controller('GalleryController', function ($route, $http, Lightbox) {
-			//console.log($route.current.activeTab);
+		var currentRoute = $route.current.activeTab;
+		var currentGalleryUrl = getCurrentGalleryUrl(currentRoute);
+		this.pictures = [];
+		var currentController = this;
 
-			this.pictures = [];
-			var currentController = this;
-			var langGrUrl = '/app/gallery/services/woods-gr.json';
+		$http.get(currentGalleryUrl)
+			.success(function (data) {
+				currentController.pictures = data;
+				new Masonry('#masonry-gallery');
+			});
 
-			$http.get(langGrUrl)
-				.success(function (data) {
-					currentController.pictures = data;
-					new Masonry('#masonry-gallery');
-				});
-
-			this.openLightboxModal = function (index) {
-				Lightbox.openModal(currentController.woodPaintings, index);
-			};
-		}
-	);
-
+		this.openLightboxModal = function (index) {
+			Lightbox.openModal(currentController.pictures, index);
+		};
+	});
 })();
+
+function getCurrentGalleryUrl(currentRoute) {
+	if (currentRoute === '#wood') {
+		return '/app/gallery/services/woods-gr.json';
+	}
+}
