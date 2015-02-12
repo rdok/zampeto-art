@@ -29,15 +29,19 @@
 })();
 
 function getCurrentGalleryUrl(currentRoute) {
-	if (currentRoute === '#wood') {
-		return '/app/gallery/services/woods-gr.json';
-	}
-	if (currentRoute === '#pictures-portables-angels') {
-		return '/app/gallery/services/portables/angels-gr.json';
+	// Pictures pages
+	if (currentRoute === '#pictures-portables-representations') {
+		return '/app/gallery/services/portables/representations-gr.json';
 	}
 	if (currentRoute === '#pictures-portables-saints') {
 		return '/app/gallery/services/portables/saints-gr.json';
 	}
+	if (currentRoute === '#pictures-portables-angels') {
+		return '/app/gallery/services/portables/angels-gr.json';
+	}
 
-	console.log(currentRoute);
+	// Woods Pages
+	if (currentRoute === '#wood') {
+		return '/app/gallery/services/woods-gr.json';
+	}
 }

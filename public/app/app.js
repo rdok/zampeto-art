@@ -20,13 +20,17 @@
 				templateUrl: "/app/pages/home.html",
 				activeTab  : '/'
 			})
-			.when("/pictures-portables-angels", {
+			.when("/pictures-portables-representations", {
 				templateUrl: "/app/gallery/gallery.html",
-				activeTab  : '#pictures-portables-angels'
+				activeTab  : '#pictures-portables-representations'
 			})
 			.when("/pictures-portables-saints", {
 				templateUrl: "/app/gallery/gallery.html",
 				activeTab  : '#pictures-portables-saints'
+			})
+			.when("/pictures-portables-angels", {
+				templateUrl: "/app/gallery/gallery.html",
+				activeTab  : '#pictures-portables-angels'
 			})
 			.when("/wood",
 			{
