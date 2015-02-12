@@ -34,32 +34,26 @@
 
 <body ng-controller="PageController as pageCtrl">
 
-<div class="wrapper>">
+<!-- Static nav-bar -->
+<top-nav></top-nav>
 
-    <!-- Static nav-bar -->
-    <top-nav></top-nav>
+<hr/>
 
-    <hr/>
-
-    <!-- body contents -->
-    <div id="content" class="container">
-        <div ng-view></div>
-    </div>
-
-    <hr/>
+<!-- body contents -->
+<div id="content" class="container">
+    <div ng-view></div>
 </div>
 
-<footer class="modal-footer">
-    <div class="container">
-        <div class="col-md-4 col-md-push-2 col-xs-6 col-xs-push-1">
-            {{pageCtrl.lang.footer.copyright}} © Zampeto-Art 2015
-        </div>
+<hr/>
 
-        <div class="col-md-3 col-md-push-3 col-xs-6 col-xs-push-1">
-            {{pageCtrl.lang.footer.powerBy}}<a href="mailto:ndmdevelop@gmail.com" style="text-decoration: none;">
-            NDM</a>
-        </div>
+<footer class="footer container">
+    <div class="col-md-4 col-md-push-2 col-xs-6 col-xs-push-1">
+        {{pageCtrl.lang.footer.copyright}} © Zampeto-Art 2015
+    </div>
 
+    <div class="col-md-3 col-md-push-3 col-xs-6 col-xs-push-1">
+        {{pageCtrl.lang.footer.powerBy}}<a href="mailto:ndmdevelop@gmail.com" style="text-decoration: none;">
+        NDM</a>
     </div>
 </footer>
 

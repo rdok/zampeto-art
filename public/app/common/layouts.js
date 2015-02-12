@@ -4,7 +4,7 @@
  * @version 1/27/2015
  */
 (function () {
-	var app = angular.module('common-directives', []);
+	var app = angular.module('commonDirectives', []);
 
 	app.directive('topNav', function () {
 		return {

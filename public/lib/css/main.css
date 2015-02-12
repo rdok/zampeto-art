@@ -37,7 +37,7 @@ a:hover {
 hr {
     border: 3px solid #bf8010;
     width: 34.1%;
-    margin: 0 0 45px 30.87%;
+    margin: 0 30.87% 45px 30.87%;
 }
 
 #portables-sbmenu > li > a {
@@ -78,7 +78,6 @@ hr {
     .container {
         width: 963px;
     }
-
 
     #content {
         font-size: 16px;
@@ -413,18 +412,23 @@ h3, h3 {
     margin: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
-.wrapper {
+html {
+    position: relative;
     min-height: 100%;
-    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-    height: 100%;
-    margin: 0 auto -55px; /* the bottom margin is the negative value of the footer's height */
 }
 
-.footer, .push {
-    height: 55px; /* .push must be the same height as .footer */
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 125px;
+}
+
+.footer {
+    padding-top: 20px;
+    border-top: 1px solid #E5E5E5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 80px;
 }
 

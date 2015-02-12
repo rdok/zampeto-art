@@ -7,7 +7,7 @@
 
 	var app = angular.module('zampetoArtApp', [
 		'ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox',
-		'common-directives'
+		'commonDirectives', 'galleryCtrl'
 	]);
 
 	/**
@@ -17,23 +17,23 @@
 		$routeProvider
 			// Home
 			.when("/", {
-				templateUrl: "/pages/home.html",
+				templateUrl: "/app/pages/home.html",
 				activeTab  : '/'
 			})
-			.when("/pictures/portlet/angels", {
-				templateUrl: "/pages/pictures/portlet/angels.html",
+			.when("/pictures/portlet-angels", {
+				templateUrl: "/app/pages/pictures/portlet-angels.html",
 				controller : "PicturesController",
 				activeTab  : '#pictures-portlet-angels'
 			})
 			.when("/wood",
 			{
-				templateUrl: "/pages/wood.html",
+				templateUrl: "/app/pages/gallery.html",
 				controller : "GalleryController",
 				activeTab  : '#wood'
 			})
 			.when("/contact",
 			{
-				templateUrl: "/pages/contact.html",
+				templateUrl: "/app/pages/contact.html",
 				activeTab  : '#contact'
 			}) // else 404
 
@@ -65,7 +65,6 @@
 				$http.get(langEnUrl)
 					.success(function (data) {
 						currentCtrl.lang = data;
-						currentCtrl.apply();
 					});
 				return;
 			}
@@ -73,7 +72,6 @@
 			$http.get(langGrUrl)
 				.success(function (data) {
 					currentCtrl.lang = data;
-					currentCtrl.apply();
 				});
 		};
 
@@ -84,8 +82,10 @@
 		 */
 		currentCtrl.toTrusted = function (htmlCode) {
 			return $sce.trustAsHtml(htmlCode);
-		}
+		};
+
 	});
+
 	app.directive('dropdownMenu', function () {
 		return {
 			link: function (scope, elem) {
