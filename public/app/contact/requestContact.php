@@ -47,7 +47,6 @@ $mg->sendMessage(
 	 'subject'             => $emailSubject,
 	 'text'                => 'Your mail does not support html',
 	 'html'                => $html,
-	 'o:testmode'          => 'yes',
 	 'recipient-variables' =>
 		 '{
 			"' . $recipientEmail . '":
@@ -62,3 +61,5 @@ $mg->sendMessage(
 				}
 		}'
 	]);
+
+//'o:testmode'          => 'yes',

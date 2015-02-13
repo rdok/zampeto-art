@@ -19,10 +19,9 @@
 				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 			}).
 				success(function (data, status, headers, config) {
-					console.log('contact posted'.data);
+					$('.bs-example-modal-sm').modal('toggle');
 				}).
 				error(function (data, status, headers, config) {
-					console.log(data);
 				});
 		};
 	});
