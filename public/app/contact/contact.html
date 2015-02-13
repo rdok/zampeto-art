@@ -19,7 +19,7 @@
         <p class="text-center header text-justify">{{pageCtrl.lang.contact.form.contact}}</p>
     </div>
     <div class="col-md-5 col-md-push-1 col-sm-12" id="contact-form">
-        <form>
+        <form name="reservationForm">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="{{pageCtrl.lang.contact.form.name}}">
             </div>
@@ -34,7 +34,9 @@
                           placeholder="{{pageCtrl.lang.contact.form.message}}"></textarea>​
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-default btn-block">{{pageCtrl.lang.contact.form.send}}</button>
+                <button type="submit" ng-click="contactCtrl.sendContact()"
+                        class="btn btn-default btn-block">{{pageCtrl.lang.contact.form.send}}
+                </button>
             </div>
         </form>
     </div>
