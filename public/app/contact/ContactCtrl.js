@@ -11,6 +11,8 @@
         this.reservation = {};
 
         this.sendContact = function () {
+            console.log(this.contact);
+
             $http({
                 method: 'POST',
                 url: "contact/requestContact.php",

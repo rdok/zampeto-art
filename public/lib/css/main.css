@@ -432,3 +432,6 @@ body {
     height: 80px;
 }
 
+.error {
+    color: #BF8010;
+}

@@ -19,22 +19,46 @@
         <p class="text-center header text-justify">{{pageCtrl.lang.contact.form.contact}}</p>
     </div>
     <div class="col-md-5 col-md-push-1 col-sm-12" id="contact-form">
-        <form name="reservationForm">
+
+        <form name="contactForm" novalidate>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="{{pageCtrl.lang.contact.form.name}}">
+                <input name="name" ng-model="contactCtrl.contact.name" type="text"
+                       placeholder="{{pageCtrl.lang.contact.form.name}}"
+                       ng-minlength="3" required class="form-control">
+
+                <div ng-show="contactForm.$submitted || form.name.$touched || contactForm.name.$dirty">
+                            <span ng-show="!contactForm.name.$valid" class="error">Το Όνομα είναι υποχρεωτικό.
+                             Ελάχιστο 3 χαρακτήρες.</span>
+                </div>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="E-MAIL">
+                <input name="email" type="email" ng-model="contactCtrl.contact.email"
+                       placeholder="E-MAIL"
+                       class="form-control" required>
+
+                <div ng-show="contactForm.$submitted || form.email.$touched || contactForm.email.$dirty">
+                                <span ng-show="!contactForm.email.$valid" class="error">
+                                Η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν είναι έγκυρη.</span>
+                </div>
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="{{pageCtrl.lang.contact.form.subject}}">
             </div>
             <div class="form-group">
-                <textarea class="form-control" rows="11"
-                          placeholder="{{pageCtrl.lang.contact.form.message}}"></textarea>​
+
+                 <textarea class="form-control" name="message"
+                           ng-model="contactCtrl.contact.message"
+                           placeholder="{{pageCtrl.lang.contact.form.message}}"
+                           ng-minlength="10"
+                           rows="11" required></textarea>
+
+                <div ng-show="contactForm.$submitted || form.message.$touched || contactForm.message.$dirty">
+                            <span ng-show="!contactForm.message.$valid" class="error">
+                                Το μήνυμά σας είναι πολύ μικρό. Παρακαλώ προσθέστε μερικές περισσότερες λέξεις.</span>
+                </div>
             </div>
             <div class="form-group">
-                <button type="submit" ng-click="contactCtrl.sendContact()"
+                <button type="submit" ng-click="contactForm.$valid && contactCtrl.sendContact()"
                         class="btn btn-default btn-block">{{pageCtrl.lang.contact.form.send}}
                 </button>
             </div>
