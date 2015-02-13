@@ -30,7 +30,6 @@
 
 function getCurrentGalleryUrl(currentRoute) {
 	// Pictures pages
-
 	if (currentRoute === '#pictures-portables-jesus-christ') {
 		return '/app/gallery/services/portables/jesus-christ-gr.json';
 	}
@@ -47,7 +46,18 @@ function getCurrentGalleryUrl(currentRoute) {
 		return '/app/gallery/services/portables/angels-gr.json';
 	}
 
-	// Woods Pages
+	// Decoration pages
+	if (currentRoute === '#decoration-on-wall') {
+		return '/app/gallery/services/decorations/on-wall-gr.json';
+	}
+	if (currentRoute === '#decoration-on-wood') {
+		return '/app/gallery/services/decorations/on-wood-gr.json';
+	}
+	if (currentRoute === '#decoration-on-glass') {
+		return '/app/gallery/services/decorations/on-glass-gr.json';
+	}
+
+	// Wood Pages
 	if (currentRoute === '#wood') {
 		return '/app/gallery/services/woods-gr.json';
 	}
