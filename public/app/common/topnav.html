@@ -47,12 +47,18 @@
                 <li ng-class="{active: $route.current.activeTab == '/'}">
                     <a ng-href="/#">{{ pageCtrl.lang.navBar.home }}</a>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown"
+                    ng-class="{active: $route.current.activeTab == '#pictures-portables-jesus-christ' ||
+                     $route.current.activeTab == '#pictures-portables-mother-of-god' ||
+                     $route.current.activeTab == '#pictures-portables-representations' ||
+                     $route.current.activeTab == '#pictures-portables-saints' ||
+                     $route.current.activeTab == '#pictures-portables-angels' }">
                     <a ng-href="#" class="dropdown-toggle" role="button" aria-expanded="false" dropdown-menu>{{
                         pageCtrl.lang.navBar.pictures }}
                         <span></span></a>
                     <ul class="dropdown-menu" role="menu" id="portables-menu">
-                        <li class="dropdown-submenu">
+                        <li class="dropdown-submenu"
+                                >
                             <a tabindex="-1" ng-href="#">{{ pageCtrl.lang.navBar.portable }}</a>
                             <ul class="dropdown-menu" id="portables-sbmenu">
                                 <li><a tabindex="-1" ng-href="/#pictures-portables-jesus-christ">{{
@@ -68,7 +74,9 @@
 
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown" ng-class="{active: $route.current.activeTab == '#decoration-on-wall' ||
+                     $route.current.activeTab == '#decoration-on-wood' ||
+                     $route.current.activeTab == '#decoration-on-glass' }">
                     <a ng-href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button"
                        aria-expanded="false" dropdown-menu>{{ pageCtrl.lang.navBar.decoration }}<span
                             ></span></a>

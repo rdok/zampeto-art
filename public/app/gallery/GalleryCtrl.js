@@ -40,7 +40,7 @@
 				var currentGalleryUrl = ($route.current.activeTab).substring(1); // remove #
 				var currentLang = lang.toLowerCase();
 				currentGalleryUrl = '/app/gallery/services/' + currentGalleryUrl + '-' + currentLang + '.json';
-				console.log(currentGalleryUrl);
+
 				$http.get(currentGalleryUrl)
 					.success(function (data) {
 						currentController.pictures = data;
