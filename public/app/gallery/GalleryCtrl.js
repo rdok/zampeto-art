@@ -4,61 +4,50 @@
  * @version 1/27/2015
  */
 (function () {
-	var app = angular.module('galleryCtrl', ['ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox']);
+	var app = angular.module('galleryCtrl', [
+		'ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox',
+		'languageServices'
+	]);
 
 	// set a custom template
 	app.config(function (LightboxProvider) {
 		LightboxProvider.templateUrl = '/app/gallery/lightbox-template.html';
 	});
 
-	app.controller('GalleryController', function ($route, $http, Lightbox) {
-		var currentGalleryUrl = getCurrentGalleryUrl($route.current.activeTab);
-		this.pictures = [];
-		var currentController = this;
+	app.controller('GalleryController', function ($route, $http, Lightbox, $scope) {
+			var currentGalleryUrl = ($route.current.activeTab).substring(1); // remove #
+			currentGalleryUrl = '/app/gallery/services/' + currentGalleryUrl + '-gr.json';
 
-		$http.get(currentGalleryUrl)
-			.success(function (data) {
-				currentController.pictures = data;
-				new Masonry('#masonry-gallery');
+			console.log(currentGalleryUrl);
+
+			this.pictures = [];
+			var currentController = this;
+
+			$http.get(currentGalleryUrl)
+				.success(function (data) {
+					currentController.pictures = data;
+					new Masonry('#masonry-gallery');
+				});
+
+			this.openLightboxModal = function (index) {
+				Lightbox.openModal(currentController.pictures, index);
+			};
+
+			$scope.$watch('lang', function (lang) {
+				if (typeof lang === 'undefined') {
+					return;
+				}
+				var currentGalleryUrl = ($route.current.activeTab).substring(1); // remove #
+				var currentLang = lang.toLowerCase();
+				currentGalleryUrl = '/app/gallery/services/' + currentGalleryUrl + '-' + currentLang + '.json';
+				console.log(currentGalleryUrl);
+				$http.get(currentGalleryUrl)
+					.success(function (data) {
+						currentController.pictures = data;
+						new Masonry('#masonry-gallery');
+					});
 			});
-
-		this.openLightboxModal = function (index) {
-			Lightbox.openModal(currentController.pictures, index);
-		};
-	});
+		}
+	);
 })();
 
-function getCurrentGalleryUrl(currentRoute) {
-	// Pictures pages
-	if (currentRoute === '#pictures-portables-jesus-christ') {
-		return '/app/gallery/services/portables/jesus-christ-gr.json';
-	}
-	if (currentRoute === '#pictures-portables-mother-of-god') {
-		return '/app/gallery/services/portables/mother-of-god-gr.json';
-	}
-	if (currentRoute === '#pictures-portables-representations') {
-		return '/app/gallery/services/portables/representations-gr.json';
-	}
-	if (currentRoute === '#pictures-portables-saints') {
-		return '/app/gallery/services/portables/saints-gr.json';
-	}
-	if (currentRoute === '#pictures-portables-angels') {
-		return '/app/gallery/services/portables/angels-gr.json';
-	}
-
-	// Decoration pages
-	if (currentRoute === '#decoration-on-wall') {
-		return '/app/gallery/services/decorations/on-wall-gr.json';
-	}
-	if (currentRoute === '#decoration-on-wood') {
-		return '/app/gallery/services/decorations/on-wood-gr.json';
-	}
-	if (currentRoute === '#decoration-on-glass') {
-		return '/app/gallery/services/decorations/on-glass-gr.json';
-	}
-
-	// Wood Pages
-	if (currentRoute === '#wood') {
-		return '/app/gallery/services/woods-gr.json';
-	}
-}

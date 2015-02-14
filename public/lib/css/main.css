@@ -403,6 +403,10 @@ h3, h3 {
     min-height: 110px;
 }
 
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+    background-color: transparent;
+}
+
 /* center container with CSS */
 #fit-width .masonry {
     margin: 0 auto;

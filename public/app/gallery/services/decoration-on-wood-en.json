@@ -1,0 +1,26 @@
+[
+	{
+		"title": "Inside door",
+		"description": "Tempera, carved decorations, gold 24k",
+		"url": "/lib/img/decorations/on-wood/wood-full-1.jpeg",
+		"thumbnail": "/lib/img/decorations/on-wood/wood-thumb-1.png"
+	},
+	{
+		"title": "Inside door",
+		"description": "Tempera, gold 24k",
+		"url": "/lib/img/decorations/on-wood/wood-full-2.jpeg",
+		"thumbnail": "/lib/img/decorations/on-wood/wood-thumb-2.png"
+	},
+	{
+		"title": "Inside door",
+		"description": "Tempera",
+		"url": "/lib/img/decorations/on-wood/wood-full-3.jpeg",
+		"thumbnail": "/lib/img/decorations/on-wood/wood-thumb-3.png"
+	},
+	{
+		"title": "Chest",
+		"description": "Tempera, aging technique",
+		"url": "/lib/img/decorations/on-wood/wood-full-5.jpeg",
+		"thumbnail": "/lib/img/decorations/on-wood/wood-thumb-5.png"
+	}
+]

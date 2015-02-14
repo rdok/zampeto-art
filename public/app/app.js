@@ -91,6 +91,8 @@
 			});
 
 		this.selectLanguage = function (lang) {
+			$scope.lang = lang;
+
 			if (lang === "EN") {
 				$http.get(langEnUrl)
 					.success(function (data) {
