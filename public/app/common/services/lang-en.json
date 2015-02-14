@@ -27,8 +27,11 @@
 		"form": {
 			"contact": "CONTACT",
 			"name": "NAME",
+			"nameError": "Name is required. Min 3 characters.",
+			"emailError": "Email is not valid.",
 			"subject": "SUBJECT",
 			"message": "MESSAGE",
+			"messageError": "Your message it small. Please add a couple words more.",
 			"send": "SEND"
 		},
 		"name": "DIMITROKALLI ZAMPETO"

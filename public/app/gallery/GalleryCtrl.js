@@ -18,8 +18,6 @@
 			var currentGalleryUrl = ($route.current.activeTab).substring(1); // remove #
 			currentGalleryUrl = '/app/gallery/services/' + currentGalleryUrl + '-gr.json';
 
-			console.log(currentGalleryUrl);
-
 			this.pictures = [];
 			var currentController = this;
 

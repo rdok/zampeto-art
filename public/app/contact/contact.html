@@ -26,9 +26,10 @@
                        placeholder="{{pageCtrl.lang.contact.form.name}}"
                        ng-minlength="3" required class="form-control">
 
-                <div ng-show="contactForm.$submitted || form.name.$touched || contactForm.name.$dirty">
-                            <span ng-show="!contactForm.name.$valid" class="error">Το Όνομα είναι υποχρεωτικό.
-                             Ελάχιστο 3 χαρακτήρες.</span>
+                <div ng-show="contactForm.$submitted || form.name.$touched || contactForm.name.$dirty || contactCtrl.isSubmtBtnPressed()">
+                    <span ng-show="!contactForm.name.$valid" class="error">
+                        {{pageCtrl.lang.contact.form.nameError}}
+                    </span>
                 </div>
             </div>
             <div class="form-group">
@@ -36,9 +37,10 @@
                        placeholder="E-MAIL"
                        class="form-control" required>
 
-                <div ng-show="contactForm.$submitted || form.email.$touched || contactForm.email.$dirty">
-                                <span ng-show="!contactForm.email.$valid" class="error">
-                                Η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν είναι έγκυρη.</span>
+                <div ng-show="contactForm.$submitted || form.email.$touched || contactForm.email.$dirty || contactCtrl.isSubmtBtnPressed()">
+                    <span ng-show="!contactForm.email.$valid" class="error">
+                        {{pageCtrl.lang.contact.form.emailError}}
+                    </span>
                 </div>
             </div>
             <div class="form-group">
@@ -53,9 +55,11 @@
                            ng-minlength="10"
                            rows="11" required></textarea>
 
-                <div ng-show="contactForm.$submitted || form.message.$touched || contactForm.message.$dirty">
-                            <span ng-show="!contactForm.message.$valid" class="error">
-                                Το μήνυμά σας είναι πολύ μικρό. Παρακαλώ προσθέστε μερικές περισσότερες λέξεις.</span>
+                <div ng-show="contactForm.$submitted || form.message.$touched || contactForm.message.$dirty ||
+                    contactCtrl.isSubmtBtnPressed()">
+                    <span ng-show="!contactForm.message.$valid" class="error">
+                        {{pageCtrl.lang.contact.form.messageError}}
+                    </span>
                 </div>
             </div>
             <div class="form-group">

@@ -6,11 +6,12 @@
 (function () {
 	var app = angular.module('contactCtrl', []);
 
-	app.controller('ContactController', function ($route, $http) {
+	app.controller('ContactController', function ($route, $http, $scope) {
 		this.contact = {};
+		var isSubmtBtnPrs = false;
 
 		this.sendContact = function () {
-			console.log(this.contact);
+			isSubmtBtnPrs = true;
 
 			$http({
 				method : 'POST',
@@ -24,5 +25,15 @@
 				error(function (data, status, headers, config) {
 				});
 		};
+
+		$scope.$watch('lang', function (lang) {
+			if (typeof lang === 'undefined') {
+				return;
+			}
+		});
+
+		this.isSubmtBtnPressed = function () {
+			return isSubmtBtnPrs;
+		}
 	});
 })();
