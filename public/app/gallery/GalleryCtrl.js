@@ -24,7 +24,6 @@
 			$http.get(currentGalleryUrl)
 				.success(function (data) {
 					currentController.pictures = data;
-					new Masonry('#masonry-gallery');
 				});
 
 			this.openLightboxModal = function (index) {
@@ -42,7 +41,6 @@
 				$http.get(currentGalleryUrl)
 					.success(function (data) {
 						currentController.pictures = data;
-						new Masonry('#masonry-gallery');
 					});
 			});
 		}
