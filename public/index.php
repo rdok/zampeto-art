@@ -1,1 +1,1 @@
-<?php include_once("./layouts/main.html");
+<?php include_once(__DIR__ . "/main.html");

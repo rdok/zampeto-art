@@ -1,0 +1,26 @@
+[
+	{
+		"title": "Κολώνα",
+		"description": "Τέμπερα",
+		"url": "/lib/img/decorations/on-wall/gallery-full-1.jpeg",
+		"thumbnail": "/lib/img/decorations/on-wall/gallery-thumb-1.png"
+	},
+	{
+		"title": "Κολώνα",
+		"description": "Τέμπερα",
+		"url": "/lib/img/decorations/on-wall/gallery-full-2.jpeg",
+		"thumbnail": "/lib/img/decorations/on-wall/gallery-thumb-2.png"
+	},
+	{
+		"title": "Κολώνα",
+		"description": "Τέμπερα",
+		"url": "/lib/img/decorations/on-wall/gallery-full-3.jpeg",
+		"thumbnail": "/lib/img/decorations/on-wall/gallery-thumb-3.png"
+	},
+	{
+		"title": "Κολώνα",
+		"description": "Τέμπερα",
+		"url": "/lib/img/decorations/on-wall/gallery-full-3.jpeg",
+		"thumbnail": "/lib/img/decorations/on-wall/gallery-thumb-4.png"
+	}
+]
