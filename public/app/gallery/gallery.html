@@ -1,0 +1,19 @@
+<div class="row" ng-controller="GalleryController as galleryCtlr">
+    <div masonry reload-on-show
+         masonry-options="{ transitionDuration: '0.7s', isFitWidth: true, columnWidth: 80}"
+         preserve-order
+         id="masonry-gallery" class="center-block col-xs-10 col-xs-push-0">
+        <div ng-repeat="picture in galleryCtlr.pictures">
+            <div class="masonry-brick thumbnail-hover" ng-click="galleryCtlr.openLightboxModal($index)">
+                <div class="caption-hover"></div>
+                <div class="caption">
+                    <h3>{{ picture.title }}</h3>
+
+                    <p>{{ picture.description }}</p>
+                </div>
+                <a><img style="" ng-src="{{ picture.thumbnail }}"/></a>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>

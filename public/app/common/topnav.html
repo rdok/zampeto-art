@@ -1,0 +1,107 @@
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div id="social" class="pull-right">
+            <div class="row">
+                <div class="col-xs-4 col-xs-push-2">
+                    <a ng-href="https://www.facebook.com/pages/Mpettinas-Designs/350653081807994" target="_blank">
+                        <img ng-src="{{pageCtrl.lang.navBar.facebookArt}}">
+                    </a>
+                </div>
+                <div class="col-xs-4 col-xs-push-2">
+                    <a ng-href="https://www.facebook.com/pages/Zampetos-Byzantin-Icons/391570157699813" target="_blank">
+                        <img ng-src="{{pageCtrl.lang.navBar.facebookHagyography}}">
+                    </a>
+                </div>
+                <div class="col-xs-4 col-xs-push-2">
+                    <a ng-href="https://twitter.com/dmpettina" target="_blank">
+                        <img ng-src="/lib/img/common/twtr-logo.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row top-buffer">
+                <div class="col-xs-1 col-xs-push-9">
+                    <a ng-href="#" ng-click="pageCtrl.selectLanguage('EN')">EN</a>
+                </div>
+                <div class="col-xs-1 col-xs-push-9">
+                    <a ng-href="#" ng-click="pageCtrl.selectLanguage('GR')">GR</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ng-href="#">
+                <img ng-src="/lib/img/common/logo.png" alt="Zampeto-Art Logo">
+            </a>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active: $route.current.activeTab == '/'}">
+                    <a ng-href="/#">{{ pageCtrl.lang.navBar.home }}</a>
+                </li>
+                <li class="dropdown"
+                    ng-class="{active: $route.current.activeTab == '#pictures-portables-jesus-christ' ||
+                     $route.current.activeTab == '#pictures-portables-mother-of-god' ||
+                     $route.current.activeTab == '#pictures-portables-representations' ||
+                     $route.current.activeTab == '#pictures-portables-saints' ||
+                     $route.current.activeTab == '#pictures-portables-angels' }">
+                    <a ng-href="#" class="dropdown-toggle" role="button" aria-expanded="false" dropdown-menu>{{
+                        pageCtrl.lang.navBar.pictures }}
+                        <span></span></a>
+                    <ul class="dropdown-menu" role="menu" id="portables-menu">
+                        <li class="dropdown-submenu"
+                                >
+                            <a tabindex="-1" ng-href="#">{{ pageCtrl.lang.navBar.portable }}</a>
+                            <ul class="dropdown-menu" id="portables-sbmenu">
+                                <li><a tabindex="-1" ng-href="/#pictures-portables-jesus-christ">{{
+                                    pageCtrl.lang.navBar.jesusChrist }}</a></li>
+                                <li><a ng-href="/#pictures-portables-mother-of-god">{{ pageCtrl.lang.navBar.virginMary
+                                    }}</a></li>
+                                <li><a ng-href="/#pictures-portables-representations">{{
+                                    pageCtrl.lang.navBar.representations }}</a></li>
+                                <li><a ng-href="/#pictures-portables-saints">{{ pageCtrl.lang.navBar.saints }}</a></li>
+                                <li><a ng-href="/#pictures-portables-angels">{{ pageCtrl.lang.navBar.angels }}</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="dropdown" ng-class="{active: $route.current.activeTab == '#decoration-on-wall' ||
+                     $route.current.activeTab == '#decoration-on-wood' ||
+                     $route.current.activeTab == '#decoration-on-glass' }">
+                    <a ng-href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button"
+                       aria-expanded="false" dropdown-menu>{{ pageCtrl.lang.navBar.decoration }}<span
+                            ></span></a>
+                    <ul class="dropdown-menu" role="menu" id="diakosmisi-menu">
+                        <li ng-class="{active: $route.current.activeTab == '#decoration-on-wall'}">
+                            <a ng-href="/#decoration-on-wall">{{ pageCtrl.lang.navBar.onWall }}</a>
+                        </li>
+                        <li ng-class="{active: $route.current.activeTab == '#decoration-on-wood'}">
+                            <a ng-href="/#decoration-on-wood">{{ pageCtrl.lang.navBar.onWood }}</a>
+                        </li>
+                        <li ng-class="{active: $route.current.activeTab == '#decoration-on-glass'}">
+                            <a ng-href="/#decoration-on-glass">{{ pageCtrl.lang.navBar.onGlass }}</a></li>
+                    </ul>
+                </li>
+                <li ng-class="{active: $route.current.activeTab == '#wood'}">
+                    <a ng-href="/#wood">{{ pageCtrl.lang.navBar.wood }}</a>
+                </li>
+
+                <li ng-class="{active: $route.current.activeTab == '#contact'}">
+                    <a ng-href="/#contact">{{ pageCtrl.lang.navBar.contact }}</a></li>
+            </ul>
+
+
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+

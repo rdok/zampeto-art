@@ -1,80 +1,87 @@
 .view-animate-container {
     position: relative;
-    height: 1000px !important;
-    height: 400px;
+    height: 100%;
     overflow: hidden;
 }
 
-.view-animate {
-    /*padding: 10px;*/
+@media (max-width: 1200px) {
+    /*.view-animate-container {*/
+    /*height: 1100px !important;*/
+    /*}*/
 }
 
-.view-animate.ng-enter, .view-animate.ng-leave {
-    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s;
-    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s;
-
-    display: block;
-    width: 96.74%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0px;
+@media (max-width: 684px) {
+    /*.view-animate-container {*/
+    /*height: 1200px !important;*/
+    /*}*/
 }
 
-.view-animate.ng-enter {
-    left: 100%;
+@media (max-width: 456px) {
+    /*.view-animate-container {*/
+    /*height: 2800px !important;*/
+    /*}*/
 }
 
-.view-animate.ng-enter.ng-enter-active {
-    left: 17px;
-}
+/*.view-animate {*/
+/*padding: 10px;*/
+/*}*/
 
-.view-animate.ng-leave.ng-leave-active {
-    left: -100%;
-}
+/*.view-animate.ng-enter, .view-animate.ng-leave {*/
+/*-webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s;*/
+/*transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s;*/
+
+/*display: block;*/
+/*width: 96.74%;*/
+
+/*position: absolute;*/
+/*top: 0;*/
+/*left: 0;*/
+/*right: 0;*/
+/*bottom: 0;*/
+/*padding: 0px;*/
+/*}*/
+
+/*.view-animate.ng-enter {*/
+/*left: 100%;*/
+/*}*/
+
+/*.view-animate.ng-enter.ng-enter-active {*/
+/*left: 17px;*/
+/*}*/
+
+/*.view-animate.ng-leave.ng-leave-active {*/
+/*left: -100%;*/
+/*}*/
 
 /**
- * Fade Animations
- * Source: http://dfsq.github.io/ngView-animation-effects/app/#/code
- */
-.fade-custom {
+* http://bootsnipp.com/snippets/featured/thumbnail-hover-without-javascript
+*/
+.thumbnail-hover {
     position: relative;
-    top: 0;
-    left: 0;
+    cursor: zoom-in;
+    overflow: hidden;
+}
+
+.caption-hover {
+    position: absolute;
+    top: -100%;
     right: 0;
+    background: url("//lib/img/common/zoom.png") no-repeat scroll 50% center #111;
+    width: 100%;
     height: 100%;
-    opacity: 1;
+    padding: 2%;
+    text-align: center;
+    color: #fff !important;
+    z-index: 2;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    opacity: 0.5;
 }
 
-.fade-custom.ng-enter {
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
-}
-.fade-custom.ng-leave {
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
-}
-
-.fade-custom.ng-enter {
-    opacity: 0;
-}
-
-.fade-custom.ng-enter-active {
-    opacity: 1;
-}
-
-.fade-custom.ng-leave {
-    opacity: 1;
-}
-
-.fade-custom.ng-leave-active {
-    opacity: 0;
+.thumbnail-hover:hover .caption-hover {
+    top: 0%;
 }
 

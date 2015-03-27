@@ -1,0 +1,95 @@
+<div class="row">
+    <div class="col-md-4 col-md-push-1 col-sm-12">
+        <div class="row">
+            <p>{{pageCtrl.lang.contact.name}}<br>
+
+                email: mpettina.d@gmail.com</p>
+        </div>
+        <div class="row">
+            <a href="#">
+                <a ng-href="https://www.facebook.com/pages/Mpettinas-Designs/350653081807994" target="_blank">
+                    <img ng-src="{{pageCtrl.lang.navBar.facebookArt}}">
+                </a>
+                <a ng-href="https://www.facebook.com/pages/Zampetos-Byzantin-Icons/391570157699813" target="_blank">
+                    <img ng-src="{{pageCtrl.lang.navBar.facebookHagyography}}">
+                </a>
+            </a>
+            <a ng-href="https://twitter.com/dmpettina" target="_blank">
+                <img ng-src="/lib/img/common/twtr-logo.png">
+            </a>
+        </div>
+    </div>
+    <div class="col-md-5 col-md-push-1 col-sm-12" id="contact-form-header">
+        <p class="text-center header text-justify">{{pageCtrl.lang.contact.form.contact}}</p>
+    </div>
+    <div class="col-md-5 col-md-push-1 col-sm-12" id="contact-form">
+
+        <form name="contactForm" novalidate>
+            <div class="form-group">
+                <input name="name" ng-model="contactCtrl.contact.name" type="text"
+                       placeholder="{{pageCtrl.lang.contact.form.name}}"
+                       ng-minlength="3" required class="form-control">
+
+                <div ng-show="contactForm.$submitted || form.name.$touched || contactForm.name.$dirty || contactCtrl.isSubmtBtnPressed()">
+                    <span ng-show="!contactForm.name.$valid" class="error">
+                        {{pageCtrl.lang.contact.form.nameError}}
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <input name="email" type="email" ng-model="contactCtrl.contact.email"
+                       placeholder="E-MAIL"
+                       class="form-control" required>
+
+                <div ng-show="contactForm.$submitted || form.email.$touched || contactForm.email.$dirty || contactCtrl.isSubmtBtnPressed()">
+                    <span ng-show="!contactForm.email.$valid" class="error">
+                        {{pageCtrl.lang.contact.form.emailError}}
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="contactCtrl.contact.subject"
+                       placeholder="{{pageCtrl.lang.contact.form.subject}}">
+            </div>
+            <div class="form-group">
+
+                 <textarea class="form-control" name="message"
+                           ng-model="contactCtrl.contact.message"
+                           placeholder="{{pageCtrl.lang.contact.form.message}}"
+                           ng-minlength="10"
+                           rows="11" required></textarea>
+
+                <div ng-show="contactForm.$submitted || form.message.$touched || contactForm.message.$dirty ||
+                    contactCtrl.isSubmtBtnPressed()">
+                    <span ng-show="!contactForm.message.$valid" class="error">
+                        {{pageCtrl.lang.contact.form.messageError}}
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" ng-click="contactForm.$valid && contactCtrl.sendContact()"
+                        class="btn btn-default btn-block">{{pageCtrl.lang.contact.form.send}}
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Ευχαριστούμε!</h4>
+
+            </div>
+            <div class="modal-body text-center">
+                <span>Η φόρμα σας έχει αποσταλεί με επιτυχία</span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Κλείσιμο</button>
+            </div>
+        </div>
+    </div>
+</div>
