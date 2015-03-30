@@ -1,27 +1,21 @@
 [
-	{
-		"title": "Αρχάγγελος Γαβριήλ",
-		"description": "αυγοτέμπερα πάνω σε χρυσό στιλβωτό 24Κ Archangel Gabriel",
-		"url": "/lib/img/pictures/portables/angels/angel-1-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/angels/angel-1-thumb.png"
-	},
-	{
-		"title": "Αρχάγγελος Γαβριήλ",
-		"description": "αυγοτέμπερα πάνω σε χρυσό στιλβωτό 24Κ",
-		"url": "/lib/img/pictures/portables/angels/angel-2-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/angels/angel-2-thumb.png"
-	},
-	{
-		"title": "Αρχάγγελος Γαβριήλ",
-		"description": "Αυγοτέμπερα, χρυσό στιλβωτό 24Κ",
-		"url": "/lib/img/pictures/portables/angels/angel-3-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/angels/angel-3-thumb.png"
-	},
-	{
-		"title": "Κεφαλη Αρχαγγέλος Γαβριήλ",
-		"description": "Αυγοτέμπερα, χρυσό στιλβωτό 24Κ",
-		"url": "/lib/img/pictures/portables/angels/angel-4-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/angels/angel-4-thumb.png"
-	}
+  {
+    "title": "Αρχάγγελος Γαβριήλ",
+    "description": "αυγοτέμπερα πάνω σε χρυσό στιλβωτό 24Κ",
+    "url": "/lib/img/pictures/portables/angels/angel-2-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/angels/angel-2-thumb.png"
+  },
+  {
+    "title": "Αρχάγγελος Γαβριήλ",
+    "description": "Αυγοτέμπερα, χρυσό στιλβωτό 24Κ",
+    "url": "/lib/img/pictures/portables/angels/angel-3-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/angels/angel-3-thumb.png"
+  },
+  {
+    "title": "Κεφαλη Αρχαγγέλος Γαβριήλ",
+    "description": "Αυγοτέμπερα, χρυσό στιλβωτό 24Κ",
+    "url": "/lib/img/pictures/portables/angels/angel-4-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/angels/angel-4-thumb.png"
+  }
 ]
 
