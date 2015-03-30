@@ -4,46 +4,46 @@
  * @version 1/27/2015
  */
 (function () {
-	var app = angular.module('galleryCtrl', [
-		'ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox',
-		'languageServices'
-	]);
+    var app = angular.module('galleryCtrl', [
+        'ngRoute', 'ngAnimate', 'wu.masonry', 'bootstrapLightbox',
+        'languageServices'
+    ]);
 
-	// set a custom template
-	app.config(function (LightboxProvider) {
-		LightboxProvider.templateUrl = '/app/gallery/lightbox-template.html';
-	});
+    // set a custom template
+    app.config(function (LightboxProvider) {
+        LightboxProvider.templateUrl = '/app/gallery/lightbox-template.html';
+    });
 
-	app.controller('GalleryController', function ($route, $http, Lightbox, $scope) {
-			var currentGalleryUrl = ($route.current.activeTab).substring(1); // remove #
-			currentGalleryUrl = '/app/gallery/services/' + currentGalleryUrl + '-gr.json';
+    app.controller('GalleryController', function ($route, $http, Lightbox, $scope) {
+            var currentGalleryUrl = ($route.current.activeTab).substring(1); // remove #
+            currentGalleryUrl = '/app/gallery/services/' + currentGalleryUrl + '-gr.json';
 
-			this.pictures = [];
-			var currentController = this;
+            this.pictures = [];
+            var currentController = this;
 
-			$http.get(currentGalleryUrl)
-				.success(function (data) {
-					currentController.pictures = data;
-				});
+            $http.get(currentGalleryUrl)
+                .success(function (data) {
+                    currentController.pictures = data;
+                });
 
-			this.openLightboxModal = function (index) {
-				Lightbox.openModal(currentController.pictures, index);
-			};
+            this.openLightboxModal = function (index) {
+                Lightbox.openModal(currentController.pictures, index);
+            };
 
-			$scope.$watch('lang', function (lang) {
-				if (typeof lang === 'undefined') {
-					return;
-				}
-				var currentGalleryUrl = ($route.current.activeTab).substring(1); // remove #
-				var currentLang = lang.toLowerCase();
-				currentGalleryUrl = '/app/gallery/services/' + currentGalleryUrl + '-' + currentLang + '.json';
+            $scope.$watch('lang', function (lang) {
+                if (typeof lang === 'undefined') {
+                    return;
+                }
+                var currentGalleryUrl = ($route.current.activeTab).substring(1); // remove #
+                var currentLang = lang.toLowerCase();
+                currentGalleryUrl = '/app/gallery/services/' + currentGalleryUrl + '-' + currentLang + '.json';
 
-				$http.get(currentGalleryUrl)
-					.success(function (data) {
-						currentController.pictures = data;
-					});
-			});
-		}
-	);
+                $http.get(currentGalleryUrl)
+                    .success(function (data) {
+                        currentController.pictures = data;
+                    });
+            });
+        }
+    );
 })();
 

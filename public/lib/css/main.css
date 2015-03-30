@@ -161,7 +161,9 @@ hr {
 }
 
 .masonry-brick > a > img {
-    max-width: 200px
+    max-width: 250px;
+    min-width: 250px;
+    margin-left: -40px;
 }
 
 /**
@@ -301,8 +303,12 @@ hr {
     display: block;
 }
 
-h3, h3 {
+h3, h4 {
     color: #BF8010;
+}
+
+.caption > p {
+    font-size: 15px;
 }
 
 #contact-form {
