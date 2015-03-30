@@ -1,74 +1,74 @@
 [
-	{
-		"title": "Η Αγ. Ελεούσα",
-		"description": "Αυγοτέμπερα",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-1-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-1-thumb.png"
-	},
-	{
-		"title": "Ελευθερώτρια",
-		"description": "Αυγοτέμπερα",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-2-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-2-thumb.png"
-	},
-	{
-		"title": "Μήτηρ Θεού",
-		"description": "Αυγοτέμπερα, χρυσό στιλβωτό 24Κ & 14Κ, φωτοστέφανο τσουκάνικο",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-3-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-3-thumb.png"
-	},
-	{
-		"title": "Η Μεσοπαντήτισσα",
-		"description": "Αυγοτέμπερα πάνω σε ασήμι",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-4-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-4-thumb.png"
-	},
-	{
-		"title": "Κεφαλή Παναγίας",
-		"description": "Αυγοτέμπερα, χρυσοκοντιλιά  & χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-5-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-5-thumb.png"
-	},
-	{
-		"title": "Κεφαλή Παναγίας",
-		"description": "Αυγοτέμπερα, χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-6-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-6-thumb.png"
-	},
-	{
-		"title": "Κεφαλή Παναγίας",
-		"description": "Αυγοτέμπερα, χρυσοκοντιλιά  & στιλβωτό χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-7-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-7-thumb.png"
-	},
-	{
-		"title": "Η γλυκοφιλούσα ",
-		"description": "Αυγοτέμπερα, χρυσοκοντιλιά  & στιλβωτό χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-8-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-8-thumb.png"
-	},
-	{
-		"title": "Η γλυκοφιλούσα ",
-		"description": "Αυγοτέμπερα, χρυσοκοντιλιά  & στιλβωτό χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-9-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-9-thumb.png"
-	},
-	{
-		"title": "Η γλυκοφιλούσα ",
-		"description": "Αυγοτέμπερα, χρυσοκοντιλιά  & χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-10-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-10-thumb.png"
-	},
-	{
-		"title": "Μήτηρ Θέού",
-		"description": "Αυγοτέμπερα, χρυσό 24Κ",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-11-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-11-thumb.png"
-	},
-	{
-		"title": "Η Αγ. Ζώνη",
-		"description": "Αυγοτέμπερα, χρυσοκονδυλιά & στιλβωτό χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
-		"url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-12-full.jpg",
-		"thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-12-thumb.png"
-	}
+  {
+    "title": "Η Ελεούσα",
+    "description": "Αυγοτέμπερα",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-1-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-1-thumb.png"
+  },
+  {
+    "title": "Η Ελευθερώτρια",
+    "description": "Αυγοτέμπερα",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-2-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-2-thumb.png"
+  },
+  {
+    "title": "Μήτηρ Θεού",
+    "description": "Αυγοτέμπερα, χρυσό στιλβωτό 24Κ & 14Κ, φωτοστέφανο τσουκάνικο",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-3-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-3-thumb.png"
+  },
+  {
+    "title": "Η Ελεούσα",
+    "description": "Αυγοτέμπερα, πάνω σε χρυσό στιλβωτό 18Κ, φωτοστέφανο τσουκάνικο",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-4-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-4-thumb.png"
+  },
+  {
+    "title": "Η Μεσοπαντήτισσα",
+    "description": "Η Μεσοπαντήτισσα",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-5-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-5-thumb.png"
+  },
+  {
+    "title": "Κεφαλή Παναγίας",
+    "description": "Αυγοτέμπερα, χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-6-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-6-thumb.png"
+  },
+  {
+    "title": "Κεφαλή Παναγίας",
+    "description": "Αυγοτέμπερα, χρυσοκοντιλιά  & στιλβωτό χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-7-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-7-thumb.png"
+  },
+  {
+    "title": "Η Γλυκοφιλούσα",
+    "description": "Αυγοτέμπερα, χρυσοκοντιλιά  & στιλβωτό χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-8-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-8-thumb.png"
+  },
+  {
+    "title": "Η Γλυκοφιλούσα",
+    "description": "Αυγοτέμπερα, χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-9-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-9-thumb.png"
+  },
+  {
+    "title": "Η Γλυκοφιλούσα",
+    "description": "Αυγοτέμπερα, χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-10-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-10-thumb.png"
+  },
+  {
+    "title": "Η Αγ. Ζώνη",
+    "description": "Αυγοτέμπερα, στιλβωτό χρυσό 24Κ, φωτοστέφανο τσουκάνικο",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-12-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-12-thumb.png"
+  },
+  {
+    "title": "Μήτηρ Θέού",
+    "description": "Αυγοτέμπερα, χρυσό 24Κ",
+    "url": "/lib/img/pictures/portables/motherOfGod/motherOfGod-11-full.jpg",
+    "thumbnail": "/lib/img/pictures/portables/motherOfGod/motherOfGod-11-thumb.png"
+  }
 ]
