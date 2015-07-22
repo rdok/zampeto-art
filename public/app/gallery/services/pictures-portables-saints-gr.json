@@ -88,5 +88,11 @@
 		"description": "αυγοτέμπερα,χρυσό στιλβωτό 24κ",
 		"url": "/lib/img/pictures/portables/saints/saint-15-full.jpg",
 		"thumbnail": "/lib/img/pictures/portables/saints/saint-15-thumb.png"
+	},
+	{
+		"title": "Αγ. Τατιανή",
+		"description": "αυγοτεμπέρα χρυσό 24κ στιλβωτό",
+		"url": "/lib/img/pictures/portables/saints/full-saint-tatiana.jpg",
+		"thumbnail": "/lib/img/pictures/portables/saints/thumb-saint-tatiana.jpg"
 	}
 ]

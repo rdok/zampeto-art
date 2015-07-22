@@ -88,5 +88,11 @@
 		"description": "Egg Tempera with golden leaf gilding 24K",
 		"url": "/lib/img/pictures/portables/saints/saint-15-full.jpg",
 		"thumbnail": "/lib/img/pictures/portables/saints/saint-15-thumb.png"
+	},
+	{
+		"title": "St. Tatiana",
+		"description": "Egg tempera golden leaf gilding 24k",
+		"url": "/lib/img/pictures/portables/saints/full-saint-tatiana.jpg",
+		"thumbnail": "/lib/img/pictures/portables/saints/thumb-saint-tatiana.jpg"
 	}
 ]
