@@ -22,5 +22,11 @@
 		"description": "Tempera, aging technique",
 		"url": "/lib/img/decorations/on-wood/wood-full-5.jpeg",
 		"thumbnail": "/lib/img/decorations/on-wood/wood-thumb-5.png"
+	},
+	{
+		"title": "Inside door",
+		"description": "Tempera with crackled technique",
+		"url": "/lib/img/decorations/on-wood/full-tempera-with-crackled-technique.jpg",
+		"thumbnail": "/lib/img/decorations/on-wood/thumb-tempera-with-crackled-technique.jpg"
 	}
 ]
