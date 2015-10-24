@@ -106,5 +106,35 @@
 		"description": "Tempera, aging",
 		"url": "/lib/img/ksylo/gallery-full-18.jpeg",
 		"thumbnail": "/lib/img/ksylo/gallery-thumb-18.png"
+	},
+	{
+		"title": "War Ship",
+		"description": "Tempera",
+		"url": "/lib/img/ksylo/gallery-full-19.jpeg",
+		"thumbnail": "/lib/img/ksylo/gallery-thumb-19.png"
+	},
+	{
+		"title": "Pirate Ship",
+		"description": "Tempera",
+		"url": "/lib/img/ksylo/gallery-full-20.jpeg",
+		"thumbnail": "/lib/img/ksylo/gallery-thumb-20.png"
+	},
+	{
+		"title": "Pirate Ship",
+		"description": "Tempera",
+		"url": "/lib/img/ksylo/gallery-full-21.jpeg",
+		"thumbnail": "/lib/img/ksylo/gallery-thumb-21.png"
+	},
+	{
+		"title": "Sailboat",
+		"description": "Tempera",
+		"url": "/lib/img/ksylo/gallery-full-22.jpeg",
+		"thumbnail": "/lib/img/ksylo/gallery-thumb-22.png"
+	},
+	{
+		"title": "Sailboat",
+		"description": "Tempera",
+		"url": "/lib/img/ksylo/gallery-full-23.jpeg",
+		"thumbnail": "/lib/img/ksylo/gallery-thumb-23.png"
 	}
 ]

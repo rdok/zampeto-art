@@ -106,5 +106,35 @@
 		"description": "Τέμπερα, παλαίωση",
 		"url": "/lib/img/ksylo/gallery-full-18.jpeg",
 		"thumbnail": "/lib/img/ksylo/gallery-thumb-18.png"
+	},
+	{
+		"title": "Πολεμικό Καράβι",
+		"description": "Τέμπερα",
+		"url": "/lib/img/ksylo/gallery-full-19.jpeg",
+		"thumbnail": "/lib/img/ksylo/gallery-thumb-19.png"
+	},
+	{
+		"title": "Πειρατικό Καράβι",
+		"description": "Τέμπερα",
+		"url": "/lib/img/ksylo/gallery-full-20.jpeg",
+		"thumbnail": "/lib/img/ksylo/gallery-thumb-20.png"
+	},
+	{
+		"title": "Πειρατικό Καράβι",
+		"description": "Τέμπερα",
+		"url": "/lib/img/ksylo/gallery-full-21.jpeg",
+		"thumbnail": "/lib/img/ksylo/gallery-thumb-21.png"
+	},
+	{
+		"title": "Ιστιοφόρο",
+		"description": "Τέμπερα",
+		"url": "/lib/img/ksylo/gallery-full-22.jpeg",
+		"thumbnail": "/lib/img/ksylo/gallery-thumb-22.png"
+	},
+	{
+		"title": "Ιστιοφόρο",
+		"description": "Τέμπερα",
+		"url": "/lib/img/ksylo/gallery-full-23.jpeg",
+		"thumbnail": "/lib/img/ksylo/gallery-thumb-23.png"
 	}
 ]
