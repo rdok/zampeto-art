@@ -9,18 +9,24 @@
 		"title": "Η Πλατυτέρα των Ουρανών",
 		"description": "βινυλιακή κόλλα σε καμβά",
 		"url": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/platytera_of_heavens.jpg",
-		"thumbnail": "lib/img/pictures/on-wall/st-fanourios-drios-paros/platytera_of_heavens_thumbnail.jpg"
+		"thumbnail": "lib/img/pictures/on-wall/st-fanourios-drios-paros/platytera_of_heavens_thumbnail.png"
 	},
 	{
 		"title": "Λεπτομέρια του θόλου",
 		"description": "βινυλιακή κόλλα σε καμβά",
 		"url": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/dome_detail.jpg",
-		"thumbnail": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/dome_detail_thumbnail.jpg"
+		"thumbnail": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/dome_detail_thumbnail.png"
 	},
 	{
 		"title": "Λεπτομέρια του θόλου",
 		"description": "βινυλιακή κόλλα σε καμβά",
 		"url": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/dome_detail_2.jpg",
-		"thumbnail": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/dome_detail_2_thumbnail.jpg"
+		"thumbnail": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/dome_detail_2_thumbnail.png"
+	},
+	{
+		"title": "Λεπτομέρια αγγέλου",
+		"description": "βινυλιακή κόλλα σε καμβά",
+		"url": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/angel_detail.jpg",
+		"thumbnail": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/angel_detail_thumbnail.png"
 	}
 ]
