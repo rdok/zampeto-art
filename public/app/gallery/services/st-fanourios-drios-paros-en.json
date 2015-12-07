@@ -8,7 +8,13 @@
 	{
 		"title": "Platytera of heavens",
 		"description": "color powder diluted in medium, on canvas",
-		"url": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/color_powder_diluted_in_large_on_canvas_2.jpg",
-		"thumbnail": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/color_powder_diluted_in_large_on_canvas_2_thumbnail.jpg"
+		"url": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/platytera_of_heavens.jpg",
+		"thumbnail": "lib/img/pictures/on-wall/st-fanourios-drios-paros/platytera_of_heavens_thumbnail.jpg"
+	},
+	{
+		"title": "Dome detail",
+		"description": "color powder diluted in medium, on canvas",
+		"url": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/dome_detail.jpg",
+		"thumbnail": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/dome_detail_thumbnail.jpg"
 	}
 ]
