@@ -1,8 +1,14 @@
 [
 	{
-		"title": "LIGHTING",
-		"description": "Painting on glass, embroidery with beaded.",
-		"url": "/lib/img/decorations/on-glass/glass-full-1.jpeg",
-		"thumbnail": "/lib/img/decorations/on-glass/glass-thumb-1.png"
+		"title": "Γενική άποψη Ιερού Ναού",
+		"description": "βινυλιακή κόλλα σε καμβά",
+		"url": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/color_powder_diluted_in_large_on_canvas_large.jpg",
+		"thumbnail": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/color_powder_diluted_on_canvas_large_thumbnail.png"
+	},
+	{
+		"title": "Γενική άποψη Ιερού Ναού",
+		"description": "βινυλιακή κόλλα σε καμβά",
+		"url": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/color_powder_diluted_in_large_on_canvas_medium.jpg",
+		"thumbnail": "/lib/img/pictures/on-wall/st-fanourios-drios-paros/color_powder_diluted_on_canvas_medium_thumbnail.png"
 	}
 ]

@@ -46,7 +46,7 @@
 			})
 			.when("/st-fanourios-drios-paros", {
 				templateUrl: "/app/gallery/gallery.html",
-				activeTab: '#decoration-on-wall'
+				activeTab: '#st-fanourios-drios-paros'
 			})
 			.when("/decoration-on-wood", {
 				templateUrl: "/app/gallery/gallery.html",
